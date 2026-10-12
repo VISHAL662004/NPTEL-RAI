@@ -38,8 +38,8 @@ function App() {
         animate={{ opacity: 1, y: 0 }}
       >
         <div>
-          <p className="hero-kicker">Interactive Quiz Platform</p>
-          <h1>NPTEL Multi-Year Practice Arena</h1>
+          <p className="hero-kicker">NPTEL Multi-Year Practice Arena</p>
+          <h1>Psychology of Learning</h1>
           <p className="hero-credit">Made by Vishal Kumar</p>
         </div>
         <p className="hero-sub">
