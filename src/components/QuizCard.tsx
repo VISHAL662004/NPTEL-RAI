@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { AlertCircle, Bookmark, BookmarkCheck, Flag } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useQuiz } from '../context/QuizContext'
-import { formatDuration } from '../utils/quiz'
+import { formatDuration, joinAnswer, splitAnswer } from '../utils/quiz'
 
 export function QuizCard() {
   const {
@@ -24,6 +24,9 @@ export function QuizCard() {
   const question = currentQuestion
   const answer = question ? session.answers[question.id] : undefined
   const revealed = question ? session.revealed.includes(question.id) : false
+  const isMulti = Boolean(question?.multi)
+  const selectedKeys = splitAnswer(answer)
+  const correctKeys = splitAnswer(question?.correctAnswer)
 
   const instantState = useMemo(() => {
     if (!question || !answer || !revealed) {
@@ -33,7 +36,7 @@ export function QuizCard() {
   }, [answer, question, revealed])
 
   const isLast = session.index === session.questions.length - 1
-  const canGoNextRapid = session.mode !== 'rapid' || Boolean(answer)
+  const canGoNextRapid = session.mode !== 'rapid' || (Boolean(answer) && (!isMulti || revealed))
 
   useEffect(() => {
     return () => {
@@ -52,6 +55,17 @@ export function QuizCard() {
 
   const handleOptionSelect = (optionKey: string) => {
     if (!question) {
+      return
+    }
+
+    if (isMulti) {
+      if (session.mode === 'rapid' && revealed) {
+        return
+      }
+      const nextKeys = selectedKeys.includes(optionKey)
+        ? selectedKeys.filter((key) => key !== optionKey)
+        : [...selectedKeys, optionKey]
+      answerQuestion(question.id, joinAnswer(nextKeys), false)
       return
     }
 
@@ -133,10 +147,19 @@ export function QuizCard() {
           transition={{ duration: 0.2 }}
         >
           <h3>{question.prompt}</h3>
+          {question.images?.map((src) => (
+            <img
+              key={src}
+              className="question-image"
+              src={`${import.meta.env.BASE_URL}${src}`}
+              alt="Figure for this question"
+            />
+          ))}
+          {isMulti && <p className="multi-hint">Select all that apply</p>}
           <div className="options">
             {question.options.map((option) => {
-              const isSelected = answer === option.key
-              const isCorrect = option.key === question.correctAnswer
+              const isSelected = selectedKeys.includes(option.key)
+              const isCorrect = correctKeys.includes(option.key)
               const showCorrect = session.mode === 'rapid' && revealed && isCorrect
               const showWrong = session.mode === 'rapid' && revealed && isSelected && !isCorrect
 
@@ -155,13 +178,25 @@ export function QuizCard() {
         </motion.div>
       </AnimatePresence>
 
+      {session.mode === 'rapid' && isMulti && !revealed && (
+        <button
+          className="action-btn"
+          disabled={selectedKeys.length === 0}
+          onClick={() => answerQuestion(question.id, answer ?? '', true)}
+        >
+          Check Answer
+        </button>
+      )}
+
       {session.mode === 'rapid' && revealed && (
         <div className={`feedback ${instantState === 'correct' ? 'ok' : 'bad'}`}>
           <AlertCircle size={18} />
           <span>
             {instantState === 'correct' ? 'Great hit.' : 'Not this one.'} Correct answer:{' '}
             <strong>
-              {question.correctAnswer.toUpperCase()}. {question.correctText}
+              {correctKeys
+                .map((key) => `${key.toUpperCase()}. ${question.options.find((opt) => opt.key === key)?.text}`)
+                .join(' | ')}
             </strong>
           </span>
         </div>

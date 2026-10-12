@@ -2,7 +2,7 @@ import { CheckCircle2, CircleX, RotateCcw, Sparkles } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useMemo } from 'react'
 import { useQuiz } from '../context/QuizContext'
-import { calculateScore, weakAreas } from '../utils/quiz'
+import { calculateScore, describeAnswer, weakAreas } from '../utils/quiz'
 
 export function ResultsDashboard() {
   const { session, resetQuiz } = useQuiz()
@@ -132,19 +132,16 @@ export function ResultsDashboard() {
           {session.questions.map((question, index) => {
             const selected = session.answers[question.id]
             const isCorrect = selected === question.correctAnswer
-            const selectedText = selected
-              ? question.options.find((opt) => opt.key === selected)?.text || 'Unknown'
-              : 'Not answered'
             return (
               <article key={question.id} className={`breakdown-item ${isCorrect ? 'correct' : 'incorrect'}`}>
                 <p className="q-title">
                   Q{index + 1}. {question.prompt}
                 </p>
                 <p>
-                  Selected: <strong>{selected ? `${selected.toUpperCase()} - ${selectedText}` : 'Not answered'}</strong>
+                  Selected: <strong>{describeAnswer(question, selected)}</strong>
                 </p>
                 <p>
-                  Correct: <strong>{question.correctAnswer.toUpperCase()} - {question.correctText}</strong>
+                  Correct: <strong>{describeAnswer(question, question.correctAnswer)}</strong>
                 </p>
                 <p className="solution">Solution: {question.solution}</p>
               </article>

@@ -16,6 +16,8 @@ export interface Question {
   correctAnswer: string
   correctText: string
   solution: string
+  multi?: boolean
+  images?: string[]
   year: string
   week: number
 }

@@ -39,7 +39,7 @@ function App() {
       >
         <div>
           <p className="hero-kicker">NPTEL Multi-Year Practice Arena</p>
-          <h1>Psychology of Learning</h1>
+          <h1>Responsible AI</h1>
           <p className="hero-credit">Made by Vishal Kumar</p>
         </div>
         <p className="hero-sub">

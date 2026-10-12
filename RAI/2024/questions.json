@@ -1,0 +1,2221 @@
+[
+ {
+  "week": 1,
+  "questions": [
+   {
+    "prompt": "Consider the following prompt: “A squirrel gives an apple to a bird”. The below images are generated from two image generation models. Which of the models has a higher number of trainable parameters?",
+    "options": [
+     "Model generating image Fig 1A",
+     "Model generating image Fig 1B",
+     "Insufficient Information",
+     "Parameters have no importance"
+    ],
+    "answers": [
+     "b"
+    ],
+    "images": [
+     "images/w01-q01-1.png"
+    ]
+   },
+   {
+    "prompt": "What language-based task is being performed in Fig 2?",
+    "options": [
+     "Common-sense QA",
+     "Planning and Strategic Thinking",
+     "Paraphrasing",
+     "Text Generation"
+    ],
+    "answers": [
+     "d"
+    ],
+    "images": [
+     "images/w01-q02-1.png"
+    ]
+   },
+   {
+    "prompt": "Which of the following tasks by AI surpasses the human benchmark according to Fig 4?",
+    "options": [
+     "Language Understanding",
+     "Code Generation",
+     "Neither",
+     "Both"
+    ],
+    "answers": [
+     "a"
+    ],
+    "images": [
+     "images/w01-q03-1.png"
+    ]
+   },
+   {
+    "prompt": "What are Task A and Task B",
+    "options": [
+     "A: Planning & Strategy, B: Common sense & Reasoning",
+     "A: Text generation, B: Common sense & Reasoning",
+     "A: Common sense & Reasoning, B: Text Generation",
+     "A: Common sense & Reasoning, B: Planning & Strategy"
+    ],
+    "answers": [
+     "d"
+    ],
+    "images": [
+     "images/w01-q04-1.png"
+    ]
+   },
+   {
+    "prompt": "Is there any issue with the model’s response in Fig 5A and Fig 5B?",
+    "options": [
+     "The model is biased about career",
+     "The model is honest",
+     "The model has no issue",
+     "The model is biased towards gender"
+    ],
+    "answers": [
+     "d"
+    ],
+    "images": [
+     "images/w01-q05-1.png"
+    ]
+   },
+   {
+    "prompt": "Identify the source, destination, mask, and output for a deepfake generation.",
+    "options": [
+     "A: Source, B: Destination, C: Mask, D: Output",
+     "A: Destination, B: Mask, C: Source, D: Output",
+     "A: Mask, B: Source, C: Destination, D: Output",
+     "None of the above"
+    ],
+    "answers": [
+     "b"
+    ],
+    "images": [
+     "images/w01-q06-1.png"
+    ]
+   },
+   {
+    "prompt": "What issue caused the catastrophe in Fig 6?",
+    "options": [
+     "Bias in Algorithm",
+     "Variance in Algorithm",
+     "Error in Algorithm",
+     "Slowness in Algorithm"
+    ],
+    "answers": [
+     "c"
+    ],
+    "images": [
+     "images/w01-q07-1.png"
+    ]
+   },
+   {
+    "prompt": "Which of the following are risks associated with AI.",
+    "options": [
+     "Malicious use",
+     "AI plateau",
+     "Organizational risks",
+     "Self-driving cars"
+    ],
+    "answers": [
+     "a",
+     "c"
+    ]
+   },
+   {
+    "prompt": "“Competition could push nations and corporations to rush AI development, relinquishing control to these systems.” The following describes which kind of risk associated with AI.",
+    "options": [
+     "Malicious Use",
+     "AI race",
+     "Organizational Risks",
+     "Option B and C both"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "What are some solutions to fight the organizational risks of AI?",
+    "options": [
+     "Safety Culture",
+     "CyberTerrorism",
+     "Red Teaming",
+     "Anomaly Enforcement"
+    ],
+    "answers": [
+     "a",
+     "c"
+    ]
+   },
+   {
+    "prompt": "Which of the human-like behaviours cause AI agents to go rogue?",
+    "options": [
+     "Jealousy",
+     "Power-seeking",
+     "Self-preservation",
+     "Empathy"
+    ],
+    "answers": [
+     "b",
+     "c"
+    ]
+   },
+   {
+    "prompt": "Identify which components the below belong to in a disaster risk equation. Alignment - i; Robustness - ii; Monitoring - iii",
+    "options": [
+     "i - Vulnerability, ii - Hazard Exposure, iii - Hazard",
+     "i - Hazard Exposure, ii - Hazard, iii - Vulnerability",
+     "i - Hazard, ii - Vulnerability, iii - Hazard Exposure",
+     "None of the above"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "What does it mean for a model to be “Aligned”?",
+    "options": [
+     "The model should be reliable, helpful, and safe",
+     "The model is fast",
+     "The model can perform several tasks",
+     "The model should speak multiple languages"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "RoBERTa _______ in reasoning tasks compared to BERT. Fill in the blanks.",
+    "options": [
+     "Succeeds",
+     "Fails",
+     "Remains the same",
+     "Performs better for some questions, worse for other questions."
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Which of the following are some speculative hazards and failure modes.",
+    "options": [
+     "Cyberdefense",
+     "Proxy gaming",
+     "Emergent goals",
+     "Empathy"
+    ],
+    "answers": [
+     "b",
+     "c"
+    ]
+   },
+   {
+    "prompt": "Identify the behavior required to be followed by the AI agents in the above images.",
+    "options": [
+     "A: Robustness, B: Monitoring, C: Alignment",
+     "A: Alignment, B: Robustness, C: Monitoring",
+     "A: Monitoring, B: Alignment, C: Monitoring",
+     "None of the above"
+    ],
+    "answers": [
+     "b"
+    ],
+    "images": [
+     "images/w01-q16-1.png"
+    ]
+   },
+   {
+    "prompt": "“Deep RL methods outperform humans in simulated aerial combat.” What kind of hazard can this cause?",
+    "options": [
+     "CyberTerrorism",
+     "Deception",
+     "Weaponized AI",
+     "Proxy gaming"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "Which of these are not a part of Red Teaming a model?",
+    "options": [
+     "Checking the toxicity of the model by querying harmful content",
+     "Checking the model generation speed to your queries",
+     "Checking the bias in the model against certain genders and race",
+     "Querying the model for your questions and doubts"
+    ],
+    "answers": [
+     "b",
+     "d"
+    ]
+   },
+   {
+    "prompt": "How do you measure the similarity between two protein structures?",
+    "options": [
+     "Local Distance Test",
+     "Global Similarity Test",
+     "Global Distance Test",
+     "Local Similarity Test"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "If the hardware access for AI building is limited to a few, it can cause severe inequality in which of the following",
+    "options": [
+     "Knowledge",
+     "Economy",
+     "Safety",
+     "Power"
+    ],
+    "answers": [
+     "b",
+     "d"
+    ]
+   },
+   {
+    "prompt": "“A team to identify vulnerabilities in AI systems within an organisation that builds AI systems.” The above defines which of the Organizational Risk’s safety measures?",
+    "options": [
+     "Anomaly Detection",
+     "Red Teaming",
+     "Cyberattack",
+     "Safety Testing",
+     "Vulnerability Detection"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "What is the correct order of the steps involved in reducing the risk associated with AI systems.",
+    "options": [
+     "Respond -> Prioritize -> Identify -> Improve",
+     "Prioritize -> Identify -> Improve -> Respond",
+     "Respond -> Prioritize -> Identify -> Improve",
+     "Identify -> Prioritize ->Respond -> Improve"
+    ],
+    "answers": [
+     "d"
+    ]
+   },
+   {
+    "prompt": "Codex LM is used for which of the following?",
+    "options": [
+     "Convert code to its natural language description",
+     "Convert math problems into step-by-step natural language explanation",
+     "Convert natural language description of programming task to code",
+     "Convert natural language explanations of math problems to their numerical equivalents",
+     "Convert code from one programming language to the other"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "Which of the following do you think are capable of discovering novel algorithms?",
+    "options": [
+     "Google’s Minerva",
+     "OpenAI’s Codex",
+     "Deepmind’s AlphaFold3",
+     "BigScience’s BLOOM",
+     "Deepmind’s AlphaTensor",
+     "StackOverFlow’s OverflowAI"
+    ],
+    "answers": [
+     "e"
+    ]
+   }
+  ]
+ },
+ {
+  "week": 2,
+  "questions": [
+   {
+    "prompt": "A robust model provides unreliable predictions when met with adversaries. Which all of the following are common adversaries in this context?",
+    "options": [
+     "Distribution Shift",
+     "Overfitting",
+     "Noisy Data",
+     "Model Compression",
+     "Gradient Descent",
+     "Data Augmentation"
+    ],
+    "answers": [
+     "a",
+     "c"
+    ]
+   },
+   {
+    "prompt": "In the context of AI research, which of the following events could be considered a black swan?",
+    "options": [
+     "Incremental improvements in natural language processing algorithms.",
+     "The consistent performance of AI models on standard benchmarks.",
+     "The sudden discovery that a widely-used AI model has a critical flaw, leading to significant ethical and legal repercussions.",
+     "The publication of a research paper revealing a minor improvement in an AI algorithm.",
+     "A gradual increase in the accuracy of AI models over time."
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "To train a model that achieves accuracy in the range of 95% to 98%, you need 1GB of data. To get 100% accuracy, you need 120GB of data. This idea is similar to which of the following principles:",
+    "options": [
+     "Sigmoid Distribution",
+     "Power law distribution",
+     "Uniform distribution",
+     "Gaussian Distribution",
+     "Long-tailed distribution"
+    ],
+    "answers": [
+     "b",
+     "e"
+    ]
+   },
+   {
+    "prompt": "Identify the equations that can lead to a long-tailed distribution.",
+    "options": [
+     "Idea * student * resources * time",
+     "Idea * student + resources * time",
+     "Idea + student + resource + time",
+     "Idea - student * resource - time"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Black Swan lies in which of the following categories?",
+    "options": [
+     "Known Knowns",
+     "Known Unknowns",
+     "Unknown Knowns",
+     "Unknown Unknowns"
+    ],
+    "answers": [
+     "d"
+    ]
+   },
+   {
+    "prompt": "Match the items below with their corresponding descriptions. Column A: I. Known Knowns, II. Known Unknowns, III. Unknown Knowns, IV. Unknown Unknowns. Column B: A. Close-ended questions, B. Recollection, C. Open-ended exploration, D. Self-Analysis.",
+    "options": [
+     "I-C, II-D, III-A, IV-B",
+     "I-B, II-A, III-D, IV-C",
+     "I-A, II-B, III-C, IV-D",
+     "I-D, III-C, III-B, IV-A"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "Why is Black Swan and Long-tailed distribution important?",
+    "options": [
+     "Understand small things that have a small but useful effect",
+     "Understand large things that have a small but useful effect",
+     "Understand small things that have a catastrophic effect",
+     "Understand large things that have a catastrophic effect"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "To check if an image classification model is robust, identify all the training and testing processes that can be used from below. The three datasets are ImageNet, AugMix, Mixup",
+    "options": [
+     "Train on AugMix and test on AugMix",
+     "Train on AugMix and test on ImageNet",
+     "Train on ImageNet and test on AugMix",
+     "Train on Mixup and test on ImageNet",
+     "Train on ImageNet and test on ImageNet",
+     "Train on ImageNet and test on Mixup"
+    ],
+    "answers": [
+     "c",
+     "f"
+    ]
+   },
+   {
+    "prompt": "Identify all the conditions to check if a model is robust?",
+    "options": [
+     "Models with larger parameters",
+     "Models with small parameters",
+     "Models that can generalise better",
+     "Models trained to perform the best on a specific type of data"
+    ],
+    "answers": [
+     "a",
+     "c"
+    ]
+   },
+   {
+    "prompt": "Which of the following are some data augmentation methods?",
+    "options": [
+     "DataShrink",
+     "AugMix",
+     "Label Flipping",
+     "Mixup"
+    ],
+    "answers": [
+     "b",
+     "d"
+    ]
+   },
+   {
+    "prompt": "The introduction of new lighting conditions in an image dataset would most likely cause?",
+    "options": [
+     "Distribution Shift",
+     "Concept Shift",
+     "Model Decay",
+     "Feature Extraction"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Identify the goal(s) of a model when training with RLHF is as follows:",
+    "options": [
+     "Maximize the penalty",
+     "Maximize the reward",
+     "Minimize the penalty",
+     "Minimize the reward"
+    ],
+    "answers": [
+     "b",
+     "c"
+    ]
+   },
+   {
+    "prompt": "Identify the step(s) involved in RLHF pipeline:",
+    "options": [
+     "Supervised fine-tuning",
+     "Unsupervised fine-tuning",
+     "Reward model training",
+     "Penalty model training",
+     "Proximal Policy optimization",
+     "Convex Policy Optimization"
+    ],
+    "answers": [
+     "a",
+     "c",
+     "e"
+    ]
+   },
+   {
+    "prompt": "Identify issue(s) associated with RLHF from below:",
+    "options": [
+     "It does not perform as well as supervised learning",
+     "Performance sensitive to hyperparameters",
+     "It does not perform as well as unsupervised learning",
+     "Fitting and optimization of the reward function is computationally expensive",
+     "Pretrained models easily outperform them in tasks like summarization"
+    ],
+    "answers": [
+     "b",
+     "d"
+    ]
+   },
+   {
+    "prompt": "What is the constraint under which the model optimization is done in RLHF to ensure that the model doesn’t diverge too far from the pretrained model?",
+    "options": [
+     "KL Divergence",
+     "L2 Regularization",
+     "Entropy Maximization",
+     "Gradient Clipping"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "What are the issues with reward modelling?",
+    "options": [
+     "Reward shrinking - gradually decreasing rewards over time",
+     "Reward misalignment - reward signals do not align with the desired outcomes",
+     "Reward saturation - model stops learning after a certain reward threshold is reached",
+     "Reward consistency - ensuring rewards are uniformly distributed",
+     "Reward hacking - maximise reward with imperfect proxy and forget the goal"
+    ],
+    "answers": [
+     "e"
+    ]
+   },
+   {
+    "prompt": "Direct Preference of Optimization works in which one of the following ways:",
+    "options": [
+     "RLHF without rewards model",
+     "RLHF without human feedback",
+     "RLHF without reinforcement learning",
+     "RLHF without KL divergence"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Identify the issues with human feedback in RLHF",
+    "options": [
+     "Overabundance of feedback",
+     "Consistent and uniform feedback",
+     "Biased and harmful feedback",
+     "Feedback redundancy"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "Identify the way(s) to maintain transparency in the context of RLHF to avoid safety and alignment issues.",
+    "options": [
+     "Quality-assurance measures for human feedback",
+     "Minimize the involvement of humans to reduce biases",
+     "Use black-box algorithms to simplify the process",
+     "Avoid documenting the feedback process to save time",
+     "Limit the diversity of human feedback to ensure consistency",
+     "Have a powerful loss function when optimizing the reward model"
+    ],
+    "answers": [
+     "a",
+     "f"
+    ]
+   },
+   {
+    "prompt": "What is distribution shift in machine learning?",
+    "options": [
+     "The training distribution is not similar to the test distribution",
+     "The model's parameters change during training",
+     "The target variable's distribution changes over time",
+     "The model's prediction accuracy improves on new data"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "What is data poisoning in the context of machine learning?",
+    "options": [
+     "Removing important features from the dataset",
+     "Oversampling minority classes in imbalanced datasets",
+     "Adding hidden functionalities to control the model behaviour",
+     "Encrypting sensitive information in the training data"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "When is a data poisoning attack considered successful?",
+    "options": [
+     "The model's overall accuracy decreases significantly",
+     "The model fails to converge during training",
+     "The model becomes computationally inefficient",
+     "The model outputs the specific behaviour when it encounters the trigger"
+    ],
+    "answers": [
+     "d"
+    ]
+   },
+   {
+    "prompt": "Consider the following scenario: You have a dataset with 10000 samples and a model trained over it has a test accuracy of almost 94%. You then introduce a trojan data poisoning attack in your dataset such that every time it looks at a certain trigger pattern, the model behaves in a certain way. You get a success rate of 99% for your data poisoning attack through the trigger by poisoning 0.01% of your samples. What is the new test accuracy of your model? Identify the correct range.",
+    "options": [
+     "40 to 50 percent",
+     "50 to 60 percent",
+     "60 to 70 percent",
+     "70 to 80 percent",
+     "80 to 90 percent",
+     "90 to 100 percent"
+    ],
+    "answers": [
+     "f"
+    ]
+   },
+   {
+    "prompt": "What are the different defence mechanism(s) against poisoning attacks?",
+    "options": [
+     "Biasing",
+     "Filtering",
+     "Unlearning",
+     "Representation engineering",
+     "AutoDebias"
+    ],
+    "answers": [
+     "b",
+     "c"
+    ]
+   }
+  ]
+ },
+ {
+  "week": 3,
+  "questions": [
+   {
+    "prompt": "What kind of content information do you want to remove from the model data?",
+    "options": [
+     "Biased or discriminatory data",
+     "Useful patterns and trends",
+     "General public data",
+     "Random noise",
+     "Personally identifiable information",
+     "Valid and accurate data"
+    ],
+    "answers": [
+     "a",
+     "e"
+    ]
+   },
+   {
+    "prompt": "What are the reasons to choose unlearning over retraining?",
+    "options": [
+     "To improve the overall performance of the model",
+     "To add new data to the model",
+     "To change the underlying algorithm of the model",
+     "To completely overhaul the model's architecture",
+     "To save computational resources and time"
+    ],
+    "answers": [
+     "e"
+    ]
+   },
+   {
+    "prompt": "Identify the steps involved in the exact unlearning as discussed in the course.",
+    "options": [
+     "Isolate the data -> shard the data -> slice the data -> aggregate the data",
+     "Aggregate the data -> isolate the data -> slice the data -> shard the data",
+     "Shard the data -> Slice the data -> Isolate the data -> Aggregate the data",
+     "Shard the data -> Isolate the data -> Slice the data -> Aggregate the data",
+     "Isolate the data -> slice the data -> shard the data -> aggregate the data"
+    ],
+    "answers": [
+     "d"
+    ]
+   },
+   {
+    "prompt": "Which model should be retrained in the exact unlearning process?",
+    "options": [
+     "The constituent model that is trained over the isolated data",
+     "The constituent model that is trained over the sharded data",
+     "The constituent model that is trained over the aggregated data",
+     "The constituent model that is trained over the sliced data"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "How should the original model and the model after the below unlearning methods behave? 1) exact unlearning 2) approximate unlearning",
+    "options": [
+     "1) distributionally identical 2) distributionally identical",
+     "1) distributionally close 2) distributionally close",
+     "1) distributionally identical 2) distributionally close",
+     "1) distributionally close 2) distributionally identical"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "How does unlearning via differential privacy work?",
+    "options": [
+     "check whether an adversary can reliably tell apart the models before unlearning and after unlearning",
+     "check whether the model can output private and sensitive information before and after unlearning",
+     "check whether the model's predictions become more consistent and stable for private information before and after unlearning.",
+     "check whether an adversary can identify the differences in the distribution of output data of the model before and after unlearning"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Identify all the methods for privacy unlearning.",
+    "options": [
+     "Gradient descent on encountering the forget set",
+     "Remove noise from the weights influencing the forget set",
+     "Add noise to weights influencing data in forget set",
+     "Gradient ascent on encountering the forget set",
+     "Increase the learning rate when encountering the forget set",
+     "Apply dropout to all layers when encountering the forget set"
+    ],
+    "answers": [
+     "c",
+     "d"
+    ]
+   },
+   {
+    "prompt": "Match the unlearning method to their corresponding concept. 1) privacy unlearning 2) concept unlearning 3) example unlearning 4) ask for unlearning. I. data and model architecture is not modified II. use membership inference attack concept III. forget set is not clearly defined IV. forget set is clearly defined",
+    "options": [
+     "1-III, 2-I, 3-IV, 4-II",
+     "1-II, 2-III, 3-IV, 4-I",
+     "1-IV, 2-II, 3-I, 4-III",
+     "1-I, 2-IV, 3-II, 4-III",
+     "1-IV, 2-I, 3-III, 4-II"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "The forget set to be unlearned is not known in which of the following:",
+    "options": [
+     "Example Unlearning",
+     "Differential Privacy Unlearning",
+     "Privacy unlearning",
+     "Concept unlearning"
+    ],
+    "answers": [
+     "d"
+    ]
+   },
+   {
+    "prompt": "In the scenario of ask for unlearning, what kind of things can be easily unlearned?",
+    "options": [
+     "Hate speech",
+     "Toxic content",
+     "Factual Information",
+     "Sensitive information"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "When evaluating the quality of unlearning using Membership Inference Attack, which of the following scenarios implies that the unlearning is successful?",
+    "options": [
+     "The accuracy increases on the forget set",
+     "The accuracy drops on the forget set",
+     "The accuracy stays the same on the forget set",
+     "The accuracy increases on the test set",
+     "The accuracy drops on the test set",
+     "The accuracy stays the same on the test set"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "What are some metrics to evaluate the unlearning?",
+    "options": [
+     "If it was more computationally efficient compared to retraining",
+     "Increased size of the original dataset",
+     "If the unlearning retains information derived from the concept to be forgotten",
+     "If the performance has been maintained before and after unlearning"
+    ],
+    "answers": [
+     "a",
+     "d"
+    ]
+   },
+   {
+    "prompt": "In an interclass confusion scenario where confusion is synthetically added to a dataset by label flipping for some of the concepts, identify the kind of unlearning method that can be used to unlearn the data points that have their labels flipped. Assume that you have the entire data points for which the labels were flipped.",
+    "options": [
+     "Concept unlearning",
+     "Example Unlearning",
+     "Differential Privacy Unlearning",
+     "Exact unlearning",
+     "Ask to forget"
+    ],
+    "answers": [
+     "d"
+    ]
+   },
+   {
+    "prompt": "What idea does the paper Corrective Machine Learning build upon?",
+    "options": [
+     "Not all poisoned data can be identified for unlearning",
+     "Identifying and removing a small subset of poisoned data points is sufficient to ensure the model's integrity",
+     "Enhancing the model's ability to handle completely new, unseen poisoned data",
+     "The accuracy of the model improves proportionally with the amount of data removed, regardless of whether it is poisoned or not",
+     "Adding redundant data to the dataset to counteract the effects of poisoned data."
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Identify all the methods that act as the baseline for the TOFU benchmark dataset",
+    "options": [
+     "Gradient Descent",
+     "Gradient Ascent",
+     "Gradient Difference",
+     "Gradient boosting",
+     "Gradient Clipping"
+    ],
+    "answers": [
+     "b",
+     "c"
+    ]
+   },
+   {
+    "prompt": "The WMDP benchmark tests on unlearning what kind of information?",
+    "options": [
+     "Biosecurity",
+     "High-school biology",
+     "Hate speech on Twitter",
+     "Crime data"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "You are in charge of building graph models trained on Instagram social networks to provide content recommendations to users based on their connections’ content. You realize that a particular user in the network is leading to toxic content recommendations. What kind of unlearning would you use in this scenario to prevent the recommendation of toxic content?",
+    "options": [
+     "Node feature unlearning",
+     "Node unlearning",
+     "Edge Unlearning",
+     "Subgraph unlearning"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "In Representation Engineering, what is the representation?",
+    "options": [
+     "Attention heads affecting the data",
+     "Positional embeddings of the data",
+     "Activations of the layer affecting the data",
+     "The encoder of a transformer",
+     "The decoder of a transformer"
+    ],
+    "answers": [
+     "c"
+    ]
+   }
+  ]
+ },
+ {
+  "week": 4,
+  "questions": [
+   {
+    "prompt": "Which of the following define bias? (Select all that apply)",
+    "options": [
+     "Systematic favoritism towards certain groups",
+     "Random errors in data collection",
+     "Neutral and unbiased judgment",
+     "Systematic exclusion of certain data points",
+     "Random selection of samples",
+     "Systematic deviation from rationality in judgment"
+    ],
+    "answers": [
+     "a",
+     "f"
+    ]
+   },
+   {
+    "prompt": "Which of the following is one of the ways to measure bias",
+    "options": [
+     "Random sampling",
+     "Cross-Validation",
+     "Using Benchmark datasets",
+     "Chi-Square test"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "Which of the following statements is true?",
+    "options": [
+     "Demographics do not influence the perception of bias.",
+     "Demographics can influence the perception of bias.",
+     "Perception of bias is unaffected by demographics.",
+     "Demographics and bias perception are unrelated."
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "What does each pair in the CrowS-Pairs dataset consist of?",
+    "options": [
+     "One stereotype sentence and one neutral sentence",
+     "One biased sentence and one unbiased sentence",
+     "One stereotype sentence and one opposite stereotype sentence",
+     "One stereotype sentence and one less stereotype sentence"
+    ],
+    "answers": [
+     "d"
+    ]
+   },
+   {
+    "prompt": "The statement “Women are bad drivers” is a",
+    "options": [
+     "Stereotype",
+     "Anti-Stereotype",
+     "Non-Stereotype",
+     "Neutral Statement"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Which of the following is NOT a common source of bias in data?",
+    "options": [
+     "Historical inequities reflected in the data",
+     "Data collection methods that over-represent certain groups",
+     "Balanced representation of all demographic groups",
+     "Labeling errors or subjective annotations"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "At which stage of the machine learning process can bias be introduced by over- or under-representing certain groups?",
+    "options": [
+     "Data Collection",
+     "Data Pre-processing",
+     "Data Annotation",
+     "All of the above"
+    ],
+    "answers": [
+     "d"
+    ]
+   },
+   {
+    "prompt": "Which of the following characteristics can make a statement biased?",
+    "options": [
+     "Being stereotypical",
+     "Being socially aligned",
+     "Having inaccurate information",
+     "Having emotional language"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "One of the reasons bias exists in models is:",
+    "options": [
+     "Algorithm complexity",
+     "Data",
+     "Model architecture",
+     "Training duration"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "When is bias a problem?",
+    "options": [
+     "When it reduces the models performance",
+     "When it has negative impact",
+     "When it aligns with train data but not test data",
+     "When it increases the complexity"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "Which of the following is the correct setting for contrastive learning?",
+    "options": [
+     "Irrespective of the sentences, minimise the distance between their embeddings",
+     "Irrespective of the sentences, maximise the distance between their embeddings",
+     "If sentences are similar, minimise the distance between their embeddings",
+     "If sentences are different, minimise the distance between their embeddings",
+     "If sentences are different, maximise the distance between their embeddings",
+     "If sentences are different, minimise the distance between their embeddings"
+    ],
+    "answers": [
+     "c",
+     "e"
+    ]
+   }
+  ]
+ },
+ {
+  "week": 5,
+  "questions": [
+   {
+    "prompt": "What does SEAT stand for?",
+    "options": [
+     "Sentence Evaluation and Association Test",
+     "Semantic Embedding and Association Test",
+     "Sentence Embedding Association Test",
+     "Sentiment Embedding Analysis Test"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "What is coreference resolution?",
+    "options": [
+     "Identifying all mentions in a text referring to different entities",
+     "Finding all mentions in a text that refer to the same real-world entity",
+     "Analyzing sentence structure for grammatical correctness",
+     "Determining the sentiment of a text"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "For a reliable COBIAS score, the context variance (CV) should:",
+    "options": [
+     "Tend to 0",
+     "Tend to 1",
+     "Be maximized",
+     "Be minimized to 1"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Given the sentences \"A man is walking\" and \"A nurse is walking,\" a higher similarity score indicates:",
+    "options": [
+     "More bias",
+     "Less bias",
+     "No bias",
+     "Ambiguous bias"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "Pointwise Mutual Information (PMI) is used to measure the association between two events. Which of the following statements best describes PMI?",
+    "options": [
+     "PMI measures the likelihood of two events occurring together compared to the likelihood of their independent occurrence.",
+     "PMI is a measure of the difference between the probabilities of two events occurring together and separately.",
+     "PMI calculates the expected frequency of two events occurring together.",
+     "PMI assesses the correlation between two events based on their joint probability distribution."
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Consider the following prompt: \"The image shows a subject with occupation '{occupation}'. What is the gender of the central subject in this image?\" This prompt provides specific information about the subject's occupation in the image before asking about their gender. Based on this description, how would you classify the prompt?",
+    "options": [
+     "Informed Task",
+     "Blind Task",
+     "Follow-up Task",
+     "Generic Task"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Which of the following statements is true?",
+    "options": [
+     "Proprietary models are more neutral compared to CoDi and other open-source models.",
+     "Proprietary models are less neutral compared to CoDi and other open-source models.",
+     "There is no difference in neutrality between proprietary models and CoDi or other open-source models.",
+     "Neutrality in models is not related to whether they are proprietary or open-source."
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Mitigating bias can be done through:",
+    "options": [
+     "Fine-Tuning",
+     "Increasing the parameters",
+     "Using encoder models",
+     "Guardrails"
+    ],
+    "answers": [
+     "a",
+     "d"
+    ]
+   },
+   {
+    "prompt": "In the paper AutoDebias, we search for bias by ________ JS Divergence and debias by __________ JS Divergence.",
+    "options": [
+     "Maximizing, Minimizing",
+     "Minimizing, Maximizing",
+     "Maximizing, Not Changing",
+     "Not Changing, Minimizing"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "What does a high language modeling score indicate?",
+    "options": [
+     "The model ranks meaningless associations higher than meaningful associations.",
+     "The model ranks meaningful associations higher than meaningless associations.",
+     "The model equally ranks meaningful and meaningless associations.",
+     "The model's performance is not related to ranking associations."
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "What does the Idealized CAT score represent?",
+    "options": [
+     "Combination of language model score and bias score",
+     "Combination of stereotype score and fairness score",
+     "Combination of language model score and stereotype score",
+     "Combination of language model score and accuracy score"
+    ],
+    "answers": [
+     "c"
+    ]
+   }
+  ]
+ },
+ {
+  "week": 6,
+  "questions": [
+   {
+    "prompt": "Which of the following methods is the best method to efficiently protect the data to preserve the privacy of the users?",
+    "options": [
+     "Anonymization",
+     "Cryptographical Solution",
+     "Statistical solution",
+     "Data Compression",
+     "Data Duplication"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "Between a randomized response (with epsilon>0) and a fair coin toss response, which algorithm would you use to preserve privacy but have a better utility?",
+    "options": [
+     "Randomized response because the chance of falsehood is 50%",
+     "Randomized response because the chance of truth is greater than 50%",
+     "Randomized response because the chance of falsehood is greater than 50%",
+     "Coin toss response because the chance of falsehood is 50%",
+     "Coin toss response because the chance of truth is greater than 50%",
+     "Coin toss response because the chance of falsehood is greater than 50%"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "Consider the equation in the context of privacy guarantees (The notations used are the same as used during the lecture). P(RR(x') = b)*e^(−ε) ≤ P(RR(x) = b) ≤ P(RR(x') = b)*e^(ε). To maximize the privacy gains, which of the following values should be changed and how?",
+    "options": [
+     "ε should be maximum for privacy, ε should be minimum for utility",
+     "ε should be minimum for privacy, ε should be minimum for utility",
+     "ε should be maximum for privacy, ε should be maximum for utility",
+     "ε should be minimum for privacy, ε should be maximum for utility",
+     "ε is unrelated"
+    ],
+    "answers": [
+     "d"
+    ]
+   },
+   {
+    "prompt": "Consider the below values: X = x1, x2, ..... xN is the truth of an experiment. Y = y1, y2, ...... yN is the revealed values instead of the truth. To identify the average of truth, Y as an estimator cannot be used for the process by which it was obtained. You derive new values Z where Z = z1, z2, ...... zN from Y which are better estimators of X. How do you arrive at the values Z?",
+    "options": [
+     "Removing the bias from Y introduced through the random process",
+     "Adding the bias to Y removed through the random process",
+     "Removing the variance from Y introduced through the random process",
+     "Adding the variance to Y removed through the random process"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "If ε is fixed, given a privacy guarantee, to improve the utility, which of the following values can be modified?",
+    "options": [
+     "Increase the number of experiments",
+     "Increase the amount of randomness",
+     "Increase the amount of bias introduced in the random process",
+     "Increase the amount of variance introduced in the random process"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Identify the equation for the ε-differential mechanism (The notations used are the same as used during the lecture):",
+    "options": [
+     "P(M(x)∈S) / P(M(x')∈S) ≤ e^ε",
+     "P(M(x')∈S) / P(M(x')∈S) ≤ e^ε",
+     "P(M(x)∈S) / P(M(x)∈S) ≤ e^ε",
+     "P(M(x)∈S) / P(M(x')∈S) ≥ e^ε",
+     "P(M(x')∈S) / P(M(x')∈S) ≥ e^ε",
+     "P(M(x)∈S) / P(M(x)∈S) ≥ e^ε"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Identify the correct scenario in the case of differential privacy",
+    "options": [
+     "Trust the curator; Trust the world",
+     "Do not trust the curator; Trust the world",
+     "Trust the curator; Do not trust the world",
+     "Do not trust the curator; Do not trust the world"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "Identify all the values representing sensitivity in a laplacian mechanism where the function under consideration is an average of n binary values {0,1} (The notations used are the same as used during the lecture).",
+    "options": [
+     "1/n",
+     "(1/n)|x'_n − x_n|",
+     "ε",
+     "ε/n",
+     "−1/n",
+     "Δ/ε"
+    ],
+    "answers": [
+     "a",
+     "b"
+    ]
+   },
+   {
+    "prompt": "Identify the distribution from which the noise is derived in a laplacian mechanism. The representation is of the form Laplacian(a,b) where a is the mean and b is the spread parameter. (The notations used are the same as used during the lecture)",
+    "options": [
+     "laplacian (1, Δ/ε)",
+     "laplacian (Δ/ε, 0)",
+     "laplacian (Δ/ε, 1)",
+     "laplacian (0, Δ/ε)",
+     "laplacian (1, 1)",
+     "laplacian (0, 0)"
+    ],
+    "answers": [
+     "d"
+    ]
+   },
+   {
+    "prompt": "Higher privacy guarantees can be achieved in which of the following scenarios? Identify all the possible scenarios.",
+    "options": [
+     "Epsilon should be high",
+     "Inverse Sensitivity should be high",
+     "Variance should be high",
+     "Noise should be high",
+     "Utility should be high"
+    ],
+    "answers": [
+     "c",
+     "d"
+    ]
+   },
+   {
+    "prompt": "Identify the deviation of the value from the truth in the scenario of a laplacian mechanism. (The notations used are the same as used during the lecture).",
+    "options": [
+     "o(1/(εn))",
+     "o(n'/(εn))",
+     "o(ε/n)",
+     "o(e/(εn))",
+     "o(εn)"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "In the scenario of a privacy-utility trade-off, for fixed privacy, the number of samples required for a particular utility varies between the Laplacian mechanism and Randomized response is different by what factor?",
+    "options": [
+     "Constant factor",
+     "Linear factor",
+     "Exponential factor",
+     "Logarithmic factor",
+     "Quadratic factor"
+    ],
+    "answers": [
+     "e"
+    ]
+   }
+  ]
+ },
+ {
+  "week": 7,
+  "questions": [
+   {
+    "prompt": "When calculating the sensitivity in ε-Differential Privacy where the values to be derived from the data points is a d-dimension vector, identify the normalisation technique. (Notations are the same as used in the lecture)",
+    "options": [
+     "Manhattan normalisation",
+     "Eucledian normalisation",
+     "Max normalisation",
+     "Min-max normalisation",
+     "Sigmoid normalisation"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "In (ε, δ)- Differential privacy what does δ = 0 imply? (Notations are the same as used in the lecture)",
+    "options": [
+     "The equation (P(M(x)∈S) ≤ e^ε (P(M(x')∈S) should hold for some of the subsets S",
+     "The equation (P(M(x)∈S) ≤ e^ε (P(M(x')∈S) should hold for most of the subsets S",
+     "The equation (P(M(x)∈S) ≤ e^ε (P(M(x')∈S) should hold for all of the subsets S",
+     "The equation (P(M(x)∈S) ≤ e^ε (P(M(x')∈S) should hold for none of the subsets S"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "How do the utilities vary in the Laplacian mechanism vs the Gaussian mechanism in a higher dimension differential privacy setting?",
+    "options": [
+     "As the dimension increases, the Gaussian mechanism requires quadratically more amount of noise than the Laplacian mechanism, decreasing the utility",
+     "As the dimension increases, the Gaussian mechanism requires quadratically lesser amount of noise than the Laplacian mechanism, decreasing the utility",
+     "As the dimension increases, the Gaussian mechanism requires quadratically lesser amount of noise than the Laplacian mechanism, increasing the utility",
+     "As the dimension increases, the Gaussian mechanism requires quadratically more amount of noise than the Laplacian mechanism, increasing the utility"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "_____ property ensures that a function applied on the privacy-protected data _____ its privacy aspect after applying a function over it.",
+    "options": [
+     "i. Post-processing ii. Retains",
+     "i. Post-processing ii. Loses",
+     "i. Composition ii. Retains",
+     "i. Composition ii. Loses"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "After using k mechanisms for getting k(ε, δ)- differentially private data variations for a dataset, the combined leakage that is observed from these k mechanisms can be minimized by:",
+    "options": [
+     "Using Laplacian Mechanism",
+     "Using Gaussian Mechanism",
+     "Using Uniform Mechanism",
+     "Using Exponential Mechanism"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "In a buyer-seller problem, given n buyers and n valuations by the buyers, what is the total revenue given a price p.",
+    "options": [
+     "p Σ(i=n..n) A where A = 1 if vi ≥ p and A = 0 if vi ≤ p",
+     "p Σ(i=n..n) A where A = 0 if vi ≥ p and A = 1 if vi ≤ p",
+     "pn",
+     "p(n − 1)",
+     "p(1/n)"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "In the exponential mechanism to calculate the price to maximize the revenue, identify the correct statement in the scenario where 2 unequal prices result in the same revenue:",
+    "options": [
+     "Both prices have an unequal probability of being selected",
+     "Both prices have an equal probability of being selected",
+     "A higher price has a higher probability of being chosen due to normalisation",
+     "A lower price has a higher probability of being chosen due to normalisation"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "In a classification problem, if a data point lies on a hyperplane that perfectly separates the two classes, the probability of the data point belonging to class A is:",
+    "options": [
+     "25%",
+     "50%",
+     "75%",
+     "100%"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "In a vanilla Principle Component Analysis method, the reconstruction loss of a protected group is ______ than the remaining data before resampling and ______ than the remaining data after resampling.",
+    "options": [
+     "Higher, higher",
+     "Higher, lower",
+     "Lower, higher",
+     "Lower, lower"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "The goal of a Fair PCA is to find a PCA solution U where U=[Ua, Ub] such that reconstruction loss of the two groups A and B where A is the protected group is:",
+    "options": [
+     "Equal",
+     "Unequal",
+     "The protected group has a lower reconstruction loss",
+     "The protected group has a higher reconstruction loss"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "In an ideal situation where the models are completely fair, the different parity values are:",
+    "options": [
+     "Approach 0",
+     "1",
+     "Approach 1",
+     "0"
+    ],
+    "answers": [
+     "d"
+    ]
+   },
+   {
+    "prompt": "Match the following: i. P(M(x) = 1|x in C) − P(M(x) = 1); ii. P(M(x) = 1|y = 1 and C) − P(M(x) = 1|y = 1); iii. P(M(x) = 1|C = 1) − P(M(x) = 1|C = 0). a. Fair Logistic regression; b. Statistical Parity; c. Equality of Opportunity",
+    "options": [
+     "i. - a, ii. - b, iii. - c",
+     "i. - b, ii. - a, iii. - c",
+     "i. - c, ii. - a, iii. - b",
+     "i. - b, ii. - c, iii. - a"
+    ],
+    "answers": [
+     "d"
+    ]
+   }
+  ]
+ },
+ {
+  "week": 8,
+  "questions": [
+   {
+    "prompt": "Which of the following best describes the purpose of pixel attribution methods in image classification by neural networks?",
+    "options": [
+     "To increase the resolution of an image by modifying pixel values.",
+     "To highlight the pixels that were most relevant for the neural network's decision in classifying an image.",
+     "To reduce the noise in an image by adjusting irrelevant pixels.",
+     "To segment the image into different regions based on pixel similarity."
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "Which of the following is NOT a name commonly associated with pixel attribution methods?",
+    "options": [
+     "Saliency map",
+     "Sensitivity map",
+     "Feature attribution",
+     "Convolution map"
+    ],
+    "answers": [
+     "d"
+    ]
+   },
+   {
+    "prompt": "Which of the following statements is true regarding pixel attribution methods in image classification?",
+    "options": [
+     "SHAP and LIME are gradient-based methods that compute the gradient of the prediction with respect to input features.",
+     "Gradient-based methods generate explanations by manipulating parts of the image to see how it affects the classification.",
+     "Occlusion-based methods manipulate parts of the image, such as blocking or altering pixels, to understand their influence on the model's decision.",
+     "All pixel attribution methods require model-specific adjustments to function correctly."
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "Which of the following is a key difference between StyleGAN2 and StyleGAN3?",
+    "options": [
+     "StyleGAN2 is fully equivariant to translation and rotation,improving the identification of important properties.",
+     "StyleGAN3 focuses on improving the attachment of details to the image surface, whereas StyleGAN2 struggles with internal representations.",
+     "StyleGAN2 is better at identifying important properties due to its fully equivariant nature.",
+     "StyleGAN3 is fully equivariant to translation and rotation, improving the identification of important properties."
+    ],
+    "answers": [
+     "d"
+    ]
+   },
+   {
+    "prompt": "What is the primary purpose of adding noise to the image in the Smooth Grad method?",
+    "options": [
+     "To enhance the resolution of the image.",
+     "To create multiple variations for averaging pixel attribution maps.",
+     "To reduce the effect of irrelevant classes.",
+     "To increase the complexity of the gradient computation."
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "How does Guided BackProp differ from standard backpropagation in generating saliency maps?",
+    "options": [
+     "It only considers positive gradients by zeroing out negative activations and gradients.",
+     "It back propagates gradients with all activations zeroed out.",
+     "It focuses on highlighting both negative and positive contributions.",
+     "It requires padding 1 to the image before backpropagation."
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "What does a lack of change in saliency maps after randomizing the layers indicate?",
+    "options": [
+     "The saliency maps are highly accurate in reflecting the model's learning.",
+     "The saliency maps cannot be deceptive.",
+     "The saliency maps are unreliable and may not accurately capture the model’s learned features.",
+     "The saliency maps provide detailed visualizations of the model's internal mechanisms"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "What is a key feature of LIME (Local Interpretable Model-agnostic Explanations)?",
+    "options": [
+     "It requires access to the internal workings of the model to generate explanations.",
+     "It only works with tabular data and cannot be applied to text.",
+     "It provides explanations that are globally faithful across all predictions.",
+     "It can be used with any black box model, regardless of the model's internal structure."
+    ],
+    "answers": [
+     "d"
+    ]
+   },
+   {
+    "prompt": "What is the primary basis of SHAP (SHapley Additive exPlanations) for generating explanations?",
+    "options": [
+     "It employs a game theoretic approach to allocate credit and explain predictions.",
+     "It uses a neural network to generate explanations based on model weights.",
+     "It applies statistical sampling methods to estimate the importance of features.",
+     "It utilizes clustering techniques to group similar data points for explanation."
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "How do ProtoPNet models determine which patches are most important for classification?",
+    "options": [
+     "By evaluating the overall texture patterns of images.",
+     "By using statistical correlation between different patches of images.",
+     "By identifying and using patches that are representative or prototypical of each class.",
+     "By performing dimensionality reduction on the image data to find key features."
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "Why is probing important even when a model shows strong performance on a task?",
+    "options": [
+     "To check if the model is using irrelevant data for making predictions.",
+     "To verify if the model's high accuracy is due to performing specific subtasks effectively.",
+     "To understand whether the model is overfitting to the training data.",
+     "To determine the computational efficiency of the model during training and inference."
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "Which of the following best describes the TokFSM dataset?",
+    "options": [
+     "It is a dataset focused on image classification.",
+     "It is a dataset for natural language generation.",
+     "It is a dataset for reinforcement learning tasks.",
+     "It is an algorithmic sequence modeling dataset."
+    ],
+    "answers": [
+     "d"
+    ]
+   },
+   {
+    "prompt": "How do we identify \"pure\" codes in a codebook model?",
+    "options": [
+     "By checking if they activate on only one bigram or trigram",
+     "By evaluating their impact on training time",
+     "By measuring their effect on model accuracy",
+     "By analyzing their computational complexity"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Which of the following methods belong to the occlusion- or perturbation-based category of pixel attribution methods?",
+    "options": [
+     "Gradient Class Activation Mapping (Grad-CAM)",
+     "Integrated Gradient",
+     "DeepLIFT",
+     "SHAP",
+     "LIME"
+    ],
+    "answers": [
+     "d",
+     "e"
+    ]
+   }
+  ]
+ },
+ {
+  "week": 9,
+  "questions": [
+   {
+    "prompt": "How is AI best described?",
+    "options": [
+     "A multidisciplinary problem",
+     "A single-field issue",
+     "An entirely theoretical concept",
+     "A purely mathematical challenge"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Which of the following statement is true regarding the development and implementation of AI systems?",
+    "options": [
+     "Policy considerations and technical details are equally important",
+     "Technical details alone are sufficient for effective AI development",
+     "Policy considerations are only important in few countries",
+     "AI systems do not require any policy or ethical considerations"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Based on the lecture content: Which of the following statements about AGI is appropriate?",
+    "options": [
+     "Learning new skills on its own and having emotional intelligence can be characteristics of AGI",
+     "AGI cannot learn new skills independently and lacks emotional intelligence",
+     "AGI is limited to performing specific tasks and does not require emotional intelligence",
+     "AGI only focuses on technical problem-solving without any consideration of emotional aspects"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Based on the lecture content: From a mathematical perspective, which of the following is not considered a major problem in AI today, compared among others?",
+    "options": [
+     "Explainability",
+     "Hallucinations",
+     "Data privacy",
+     "Bias"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "Which of the following statements best reflects the significance of information rights?",
+    "options": [
+     "The right to inclusion of information and the right to exclusion of information are both important",
+     "The right to exclusion of information is more important",
+     "The right to inclusion of information is irrelevant compared to other rights",
+     "The right to inclusion is important but not right to exclusion"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Which of the following statements is true regarding checking for copyrighted information in black-box models?",
+    "options": [
+     "There is no way to check whether models have copyrighted information in black-box models",
+     "All black-box models provide transparency for verifying copyrighted information",
+     "Copyright information can be easily extracted from black-box models",
+     "Black-box models disclose their training data for copyright verification"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Who is primarily responsible for self-regulation in the context of AI and technology?",
+    "options": [
+     "Individuals / Individual organizations",
+     "Government agencies",
+     "Only the organizations with more than 1 crore turnover",
+     "International organizations"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "What role does the government play in the regulation and deployment of large language models (LLMs)?",
+    "options": [
+     "Strict regulation is provided by the government, which issues licenses to deploy or use LLMs",
+     "The government does not regulate LLMs and leaves all oversight to private companies",
+     "The government only provides financial support for LLM development without any regulatory role",
+     "The government encourages unrestricted use of LLMs without any form of licensing"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Which of the following is a notable drawback of AI?",
+    "options": [
+     "Environmental effects, such as high water and energy consumption",
+     "Less accuracy in predictions and results",
+     "Usage of transformers in models",
+     "Consuming more training time"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Jailbreaking AI models ______________?",
+    "options": [
+     "Produce harmful content",
+     "Improve the model's computational efficiency",
+     "Increase the model's interpretability",
+     "Enhance the model's ethical standards"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Which of the following are reasons for the delays in AI regulation?",
+    "options": [
+     "Lack of domain expertise",
+     "Challenge of regulating bad without compromising good",
+     "Lack of funding",
+     "Political pressures",
+     "Overabundance of regulations already in place"
+    ],
+    "answers": [
+     "a",
+     "b"
+    ]
+   }
+  ]
+ },
+ {
+  "week": 10,
+  "questions": [
+   {
+    "prompt": "Which of the following are challenges faced by AI in the current era? (Select all that apply)",
+    "options": [
+     "AI systems being biased",
+     "AI models requiring zero human intervention",
+     "AI systems being completely unbiased",
+     "AI models being trained on harmful data",
+     "AI systems always making ethical decisions",
+     "AI systems using transformer models"
+    ],
+    "answers": [
+     "a",
+     "d"
+    ]
+   },
+   {
+    "prompt": "What does the abbreviation \"AGI\" stand for?",
+    "options": [
+     "Artificial General Intelligence",
+     "Automated Guided Interface",
+     "Artificial General Information",
+     "Artificial Geospatial Intelligence"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Which of the following best describes one of the possible definitions of AGI?",
+    "options": [
+     "AI systems that are limited to specific tasks",
+     "AI models trained for basic automation",
+     "AI systems surpassing human intelligence",
+     "AI systems which show high training accuracy"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "Which of the following are potential challenges associated with AGI? (Select all that apply)",
+    "options": [
+     "Chaotic power struggles",
+     "Utilization for selfish and short-term objectives",
+     "Guaranteed long-term global stability",
+     "Universal agreement on AGI's ethical use",
+     "Potential misuse by a few for personal gain",
+     "Non-existential risks"
+    ],
+    "answers": [
+     "a",
+     "b",
+     "e"
+    ]
+   },
+   {
+    "prompt": "What is considered the ideal way to balance the development of AI models?",
+    "options": [
+     "Ensuring a safety-performance trade-off",
+     "Maximizing performance without considering safety",
+     "Focusing solely on safety at the expense of performance",
+     "Ignoring both safety and performance to expedite development"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "What should governments primarily focus on concerning AI systems at present?",
+    "options": [
+     "How to eliminate AI research entirely",
+     "How to encourage unrestricted AI development without regulations",
+     "How to ignore AI advancements altogether",
+     "How to govern these AI systems and make them safe"
+    ],
+    "answers": [
+     "d"
+    ]
+   },
+   {
+    "prompt": "What are the primary focuses of the EU AI Act? (Select all that apply)",
+    "options": [
+     "Regulating the use of AI to ensure safety, transparency, and accountability",
+     "Banning all forms of AI development in Europe",
+     "Promoting the unregulated use of AI across all sectors",
+     "Requiring all AI systems to be open-source and publicly accessible",
+     "Banning systems with cognitive behavioral manipulation of people or specific vulnerable groups"
+    ],
+    "answers": [
+     "a",
+     "e"
+    ]
+   },
+   {
+    "prompt": "What does the abbreviation \"GDPR\" stand for?",
+    "options": [
+     "Global Data Privacy Regulation",
+     "General Data Protection Rule",
+     "General Data Protection Regulation",
+     "Global Data Protection Requirement"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "Which of the following is a way to protect personal data?",
+    "options": [
+     "Giving people more power over their data",
+     "Allowing unrestricted access to personal data",
+     "Reducing transparency in data usage",
+     "Increasing the collection of personal data without consent"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "What is one challenge even after training a model on unbiased data?",
+    "options": [
+     "Implicit bias may still exist in the model",
+     "No challenge, model will be completely free of any bias",
+     "The model will exhibit perfect performance in all scenarios",
+     "The model will have issues related to data processing"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Among the following, which type of biased system is considered particularly harmful?",
+    "options": [
+     "Decision systems",
+     "Recommendation systems",
+     "Entertainment systems",
+     "Weather forecasting systems"
+    ],
+    "answers": [
+     "a"
+    ]
+   }
+  ]
+ },
+ {
+  "week": 11,
+  "questions": [
+   {
+    "prompt": "In the context of the paper SaGE, what is semantic consistency?",
+    "options": [
+     "Semantically equivalent questions should yield semantically equivalent answers",
+     "Semantically equivalent questions should yield same answers",
+     "Same questions should yield same answers",
+     "Same questions should yield semantically equivalent answers"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Why do models struggle with tasks in “moral scenarios”?",
+    "options": [
+     "Models lack the ability to process large datasets efficiently",
+     "Models prioritise emotion over logic in moral decision-making",
+     "The models are limited by insufficient computational power",
+     "Conflicting training data due to different morals that people have"
+    ],
+    "answers": [
+     "d"
+    ]
+   },
+   {
+    "prompt": "What metric was used to determine the quality of the paraphrase of the questions in the SaGE paper?",
+    "options": [
+     "BERTScore",
+     "Parascore",
+     "Jaccard Similarity",
+     "Cosine Similarity"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "How does the SaGE paper relate entropy and consistency?",
+    "options": [
+     "More Entropy implies consistency",
+     "Less entropy implies inconsistency",
+     "Less Entropy implies consistency",
+     "More entropy implies inconsistency"
+    ],
+    "answers": [
+     "c",
+     "d"
+    ]
+   },
+   {
+    "prompt": "Identify the statements that are TRUE with respect to the current LLMs.",
+    "options": [
+     "LLMs are not consistent in their generation",
+     "A good accuracy on benchmark datasets correlates with high consistency",
+     "LLMs are consistent in their generation",
+     "A good accuracy on benchmark datasets does not correlate with high consistency"
+    ],
+    "answers": [
+     "a",
+     "d"
+    ]
+   },
+   {
+    "prompt": "Why is AI Governance important?",
+    "options": [
+     "To prevent AI from learning new tasks independently",
+     "To limit the efficiency of AI in performing complex tasks",
+     "Ensure AI isn’t used for unethical acts",
+     "To prevent AI from being used in scientific research"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "What are some aspects of AI Governance that are in focus in the current times?",
+    "options": [
+     "Revealing the amount of compute used during training past a certain compute threshold",
+     "Limiting AI systems to only perform manual labor tasks",
+     "Ensuring right to erasure",
+     "Prohibiting the use of AI in any form of automation"
+    ],
+    "answers": [
+     "a",
+     "c"
+    ]
+   },
+   {
+    "prompt": "Which of the following are key OECD AI Principles?",
+    "options": [
+     "Inclusive growth, sustainable development, and well-being",
+     "Limiting AI to industrial use cases",
+     "Transparency and explainability",
+     "Restricting international AI collaboration"
+    ],
+    "answers": [
+     "a",
+     "c"
+    ]
+   },
+   {
+    "prompt": "As discussed in the lecture, When you have domain specific task, what kind of finetuning is preferred?",
+    "options": [
+     "Full-model finetuning",
+     "Layer-specific finetuning",
+     "Head-level finetuning",
+     "Retraining"
+    ],
+    "answers": [
+     "a",
+     "b"
+    ]
+   },
+   {
+    "prompt": "What are the cons of full-model finetuning?",
+    "options": [
+     "Overfitting",
+     "Catastrophic forgetting",
+     "Increase in parameters",
+     "Change in architecture"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "What are adapters?",
+    "options": [
+     "Remove existing layers from a model",
+     "Convert a model to a simpler architecture",
+     "Replace the model's original parameters entirely",
+     "Add additional layers to a preexisting architecture"
+    ],
+    "answers": [
+     "d"
+    ]
+   },
+   {
+    "prompt": "What is instruction finetuning?",
+    "options": [
+     "Model is trained to ignore user instructions and operate independently based on its previous training",
+     "Model’s training objective is to follow the directions provided by the user when performing the task",
+     "Process of training a model solely on instruction data without any real-world data",
+     "Modifying the model’s architecture to include specific instructions directly within its layers"
+    ],
+    "answers": [
+     "b"
+    ]
+   }
+  ]
+ },
+ {
+  "week": 12,
+  "questions": [
+   {
+    "prompt": "In graph theory, how many nodes does a single edge connect?",
+    "options": [
+     "One node",
+     "Two nodes",
+     "Three nodes",
+     "Any number of nodes"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "Which of the following tasks do Graph Neural Networks (GNNs) typically struggle with?",
+    "options": [
+     "Node classification",
+     "Link prediction",
+     "Cycle detection",
+     "Graph clustering"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "In the context of cell complexes, what does a p-cell represent?",
+    "options": [
+     "A cell with p sides",
+     "A cell with p vertices",
+     "An element of dimension p",
+     "A cell with p edges"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "What does the acronym FORGE stand for in the context of graph learning?",
+    "options": [
+     "Framework for Higher-Optimized Representation in Graph Environments",
+     "Framework for Higher-Order Representations in Graph Explanations",
+     "Functional Optimization for Regular Graph Embeddings",
+     "Fast Operational Research for Graph Equations"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "After applying FORGE, how do explainers perform compared to Random baselines?",
+    "options": [
+     "They consistently surpass Random baselines",
+     "They perform equally to Random baselines",
+     "They occasionally underperform Random baselines",
+     "They consistently underperform compared to Random baselines"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "Based on the lecture content: What can the boundary relation be loosely translated to in graph theory?",
+    "options": [
+     "Nodes",
+     "Edges",
+     "Faces",
+     "Weights"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "What does guardedness mean as discussed in the lecture?",
+    "options": [
+     "Personal information is guarded from being revealed to the outside world due to privacy reasons",
+     "A class is guarded if a classifier can't identify data points belonging to that class",
+     "A model is guarded if you cannot retrieve training data from it",
+     "An attribute is guarded if you can't classify along that attribute"
+    ],
+    "answers": [
+     "d"
+    ]
+   },
+   {
+    "prompt": "What is the process/transformation used to achieve guardedness?",
+    "options": [
+     "Affine Concept Erasure",
+     "Affine Attribute Erasure",
+     "Affine Model Erasure",
+     "Affine Class Erasure"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
+    "prompt": "How are steering vectors generally defined as discussed in the lecture?",
+    "options": [
+     "υ = μ0 − μ1 where μ0 is the mean of undesirable class and μ1 is the mean of desirable class",
+     "υ = μ0 − μ1 where μ0 is the mean of desirable class and μ1 is the median of desirable class",
+     "υ = μ0 − μ1 where μ0 is the mean of desirable class and μ1 is the mean of undesirable class",
+     "υ = μ0 − μ1 where μ0 is the mean of undesirable class and μ1 is the median of undesirable class"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "Which of the following is a limitation of graphs as a data structure?",
+    "options": [
+     "They can only represent hierarchical relationships",
+     "They can only model pairwise relationships between nodes",
+     "They are restricted to acyclic structures",
+     "They cannot represent directed edges"
+    ],
+    "answers": [
+     "b"
+    ]
+   }
+  ]
+ }
+]

@@ -1,6 +1,6 @@
-# NPTEL Interactive Quiz Platform — Psychology of Learning
+# NPTEL Interactive Quiz Platform — Responsible AI
 
-A modern dark-theme React application that creates a multi-mode quiz platform for the NPTEL Psychology of Learning course from three yearly PDF sources.
+A modern dark-theme React application that creates a multi-mode quiz platform for the NPTEL Responsible AI course from yearly assignment sources.
 
 ## Features
 
@@ -21,13 +21,15 @@ A modern dark-theme React application that creates a multi-mode quiz platform fo
 
 ## Data Pipeline
 
-Source PDFs live in the Psyclogo_of_learning folder inside this project:
+Source material lives in the RAI folder inside this project. Each year folder holds a
+`questions.json` transcribed from that year's assignments, plus an `images/` folder with the figures
+that questions refer to:
 
-- Psyclogo_of_learning/2024-week-0-to-week-12.pdf
-- Psyclogo_of_learning/2025-week-0-to-week-12.pdf
-- Psyclogo_of_learning/2026/ (one PDF per week)
+- RAI/2024/ (assignment PDFs, questions.json, images/)
+- RAI/2025/ (questions.json, once added)
+- RAI/2026/ (solution PDFs, questions.json)
 
-Generate JSON data from PDFs:
+Generate the app data:
 
 ```bash
 npm run extract:pdf
@@ -36,6 +38,7 @@ npm run extract:pdf
 This command creates:
 
 - public/data/quiz-data.json
+- public/data/images/<year>/ (copied figures)
 
 ## Run Locally
 
@@ -59,16 +62,11 @@ npm run build
 - src/components/ResultsDashboard.tsx: score, analytics, and breakdown
 - src/utils/quiz.ts: pool building, scoring, weak-area aggregation
 - src/types/quiz.ts: shared TypeScript models
-- scripts/extract-pdfs.mjs: PDF parser and JSON generator
+- scripts/extract-pdfs.mjs: validates each year's questions.json and generates the app data
 
 ## Notes
 
-- Parsing is heuristic and targets patterns present in the provided PDFs:
-  - Header line such as "July 2024- 3 Assignment" or "July 2026- Assignment Week-03"
-  - Numbered questions ("1)", optionally preceded by "QUESTION 1:")
-  - Options a-d (some questions have a-e)
-  - Ans. <letter>= <answer text>
-  - Solution:
-- When the answer letter and answer text disagree, the answer text wins; every such case, and any
-  PDF whose header year does not match its folder, is listed after `npm run extract:pdf`.
-- If the PDF format changes significantly, update extraction rules in scripts/extract-pdfs.mjs.
+- `questions.json` format per year: `[{ week, questions: [{ prompt, options: [...], answers: ["b"], solution?, images?: ["images/x.png"] }] }]`.
+- Questions with more than one entry in `answers` are multi-select: pick every correct option. In Rapid Fire
+  mode a "Check Answer" button reveals the result.
+- Numerical-answer questions (no options) are not included.

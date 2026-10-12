@@ -416,6 +416,20 @@ input {
   background: rgba(72, 19, 35, 0.66);
 }
 
+.question-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0.5rem 0 0.9rem;
+  border-radius: 10px;
+}
+
+.multi-hint {
+  margin: 0 0 0.6rem;
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+
 .feedback {
   margin-top: 0.9rem;
   padding: 0.7rem;

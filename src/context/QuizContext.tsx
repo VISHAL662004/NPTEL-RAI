@@ -39,7 +39,7 @@ interface QuizContextValue {
     source?: 'default' | 'custom',
     customVariant?: 'weeks' | 'random15',
   ) => void
-  answerQuestion: (questionId: string, option: string) => void
+  answerQuestion: (questionId: string, option: string, reveal?: boolean) => void
   setIndex: (index: number) => void
   nextQuestion: () => void
   previousQuestion: () => void
@@ -50,8 +50,8 @@ interface QuizContextValue {
 
 const QuizContext = createContext<QuizContextValue | null>(null)
 
-const QUIZ_STATE_KEY = 'quiz-app-state-psy-v1'
-const BOOKMARK_KEY = 'quiz-app-bookmarks-psy-v1'
+const QUIZ_STATE_KEY = 'quiz-app-state-rai-v1'
+const BOOKMARK_KEY = 'quiz-app-bookmarks-rai-v1'
 
 const defaultSelection: QuizSelection = {
   scope: 'year',
@@ -202,10 +202,10 @@ export function QuizProvider({ children }: { children: React.ReactNode }) {
   )
 
   const answerQuestion = useCallback(
-    (questionId: string, option: string) => {
+    (questionId: string, option: string, reveal = true) => {
       setSession((prev) => {
         const nextRevealed =
-          prev.mode === 'rapid' ? [...new Set([...prev.revealed, questionId])] : prev.revealed
+          prev.mode === 'rapid' && reveal ? [...new Set([...prev.revealed, questionId])] : prev.revealed
 
         return {
           ...prev,

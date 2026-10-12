@@ -146,3 +146,22 @@ export function weakAreas(
     .sort((a, b) => a.accuracy - b.accuracy)
     .slice(0, 6)
 }
+
+// Multi-select answers are stored as sorted option keys joined by commas, e.g. "b,d".
+export function splitAnswer(answer: string | undefined): string[] {
+  return answer ? answer.split(',') : []
+}
+
+export function joinAnswer(keys: string[]): string {
+  return [...keys].sort().join(',')
+}
+
+export function describeAnswer(question: Question, answer: string | undefined): string {
+  const keys = splitAnswer(answer)
+  if (keys.length === 0) {
+    return 'Not answered'
+  }
+  return keys
+    .map((key) => `${key.toUpperCase()} - ${question.options.find((opt) => opt.key === key)?.text ?? 'Unknown'}`)
+    .join('; ')
+}
