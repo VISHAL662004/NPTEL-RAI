@@ -50,8 +50,8 @@ interface QuizContextValue {
 
 const QuizContext = createContext<QuizContextValue | null>(null)
 
-const QUIZ_STATE_KEY = 'quiz-app-state-v1'
-const BOOKMARK_KEY = 'quiz-app-bookmarks-v1'
+const QUIZ_STATE_KEY = 'quiz-app-state-psy-v1'
+const BOOKMARK_KEY = 'quiz-app-bookmarks-psy-v1'
 
 const defaultSelection: QuizSelection = {
   scope: 'year',

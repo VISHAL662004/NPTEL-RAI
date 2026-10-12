@@ -1,6 +1,6 @@
-# NPTEL Interactive Quiz Platform
+# NPTEL Interactive Quiz Platform — Psychology of Learning
 
-A modern dark-theme React application that creates a multi-mode quiz platform from three yearly PDF sources.
+A modern dark-theme React application that creates a multi-mode quiz platform for the NPTEL Psychology of Learning course from three yearly PDF sources.
 
 ## Features
 
@@ -21,11 +21,11 @@ A modern dark-theme React application that creates a multi-mode quiz platform fr
 
 ## Data Pipeline
 
-PDFs must exist one level above this project folder:
+Source PDFs live in the Psyclogo_of_learning folder inside this project:
 
-- ../2024.pdf
-- ../2025.pdf
-- ../2026.pdf
+- Psyclogo_of_learning/2024-week-0-to-week-12.pdf
+- Psyclogo_of_learning/2025-week-0-to-week-12.pdf
+- Psyclogo_of_learning/2026/ (one PDF per week)
 
 Generate JSON data from PDFs:
 
@@ -64,8 +64,11 @@ npm run build
 ## Notes
 
 - Parsing is heuristic and targets patterns present in the provided PDFs:
-  - Assignment-Week <number>
-  - QUESTION <number>:
-  - Correct Answer:
-  - Detailed Solution:
+  - Header line such as "July 2024- 3 Assignment" or "July 2026- Assignment Week-03"
+  - Numbered questions ("1)", optionally preceded by "QUESTION 1:")
+  - Options a-d (some questions have a-e)
+  - Ans. <letter>= <answer text>
+  - Solution:
+- When the answer letter and answer text disagree, the answer text wins; every such case, and any
+  PDF whose header year does not match its folder, is listed after `npm run extract:pdf`.
 - If the PDF format changes significantly, update extraction rules in scripts/extract-pdfs.mjs.
