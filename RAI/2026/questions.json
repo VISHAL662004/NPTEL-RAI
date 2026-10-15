@@ -1762,5 +1762,146 @@
     "solution": "Research Overview: SaGE- Quantifying moral consistency in LLMs [22:45-23:58]: The SaGE study demonstrated that a model's benchmark accuracy does not correlate with its consistency at all."
    }
   ]
+ },
+ {
+  "week": 12,
+  "questions": [
+   {
+    "prompt": "What does a ‘guarded’ attribute mean in a language model’s representation space?",
+    "options": [
+     "The attribute can only be classified by specific linear probes.",
+     "The attribute requires non-linear transformations to be classified.",
+     "The attribute is heavily emphasized during the initial pre-training process.",
+     "The attribute is entirely impossible to classify based on the representation."
+    ],
+    "answers": [
+     "d"
+    ],
+    "solution": "An attribute Z is considered guarded if we can't classify along that attribute."
+   },
+   {
+    "prompt": "What is the primary objective of modifying vectors from one distribution (e.g., toxic to non-toxic) to look like another?",
+    "options": [
+     "To increase the computational cost of generating toxic content.",
+     "To guard an attribute with the smallest possible change to unrelated semantics.",
+     "To fundamentally alter the underlying vocabulary of the model.",
+     "To completely randomize the vector outputs of specific trigger tokens."
+    ],
+    "answers": [
+     "b"
+    ],
+    "solution": "We want to guard an attribute with the smallest change possible to preserve semantics unrelated to Z."
+   },
+   {
+    "prompt": "According to the lecture, what is the implication behind using Affine Steering?",
+    "options": [
+     "It is a no-gradient and cheap way to control model generation.",
+     "It fine-tunes the model to effectively remove bias using minimal training data.",
+     "It is a highly interpretable, gradient-based optimization method.",
+     "It depends heavily on reinforcement learning and human feedback."
+    ],
+    "answers": [
+     "a"
+    ],
+    "solution": "Affine Steering is a no-gradient and cheap way to control generation and to de-bias."
+   },
+   {
+    "prompt": "How does the size of a conventional cell complex scale as the size of the graph increases?",
+    "options": [
+     "It scales inversely with respect to graph size.",
+     "It scales quadratically with respect to graph size.",
+     "It scales logarithmically with respect to graph size.",
+     "It scales linearly with respect to graph size."
+    ],
+    "answers": [
+     "b"
+    ],
+    "solution": "The size of a conventional cell complex will scale quadratically as the size of the graph increases."
+   },
+   {
+    "prompt": "In the molecule toxicity detection task, why might a standard Graph Neural Network Explainer fail to identify the correct explanation?",
+    "options": [
+     "It removes all nodes that have a high edge degree.",
+     "It processes node features too slowly for a chemical dataset.",
+     "It cannot capture specific multi-node groupwise interactions.",
+     "It assigns zero weight to all the chemical bonds by default."
+    ],
+    "answers": [
+     "c"
+    ],
+    "solution": "A limitation of graphs is that they can only model pairwise relationships between nodes."
+   },
+   {
+    "prompt": "How does FORGE reduce the computational complexity of the cell complex to a linear scale?",
+    "options": [
+     "By randomly sampling only 10% of the original graph edges.",
+     "By strategically removing specific types of boundary relations.",
+     "By completely deleting all nodes with a degree higher than a threshold degree.",
+     "By executing the explainer algorithm on highly compressed latent space."
+    ],
+    "answers": [
+     "b"
+    ],
+    "solution": "By strategically removing specific types of boundary relations, we can bring this down to linear complexity."
+   },
+   {
+    "prompt": "How are cycles structurally represented in the cell complex?",
+    "options": [
+     "They are represented as 0-cells.",
+     "They are represented as 1-cells.",
+     "They are represented as 2-cells.",
+     "They are represented as 3-cells."
+    ],
+    "answers": [
+     "c"
+    ],
+    "solution": "Cycles are 2-cells, which are represented as augmented nodes connected to all edges that make up that cycle."
+   },
+   {
+    "prompt": "Which of the following are examples of graph explainers? (Select all that apply.)",
+    "options": [
+     "Predicting the next token in a language model",
+     "Toxicity detection of molecules",
+     "Affine concept erasure",
+     "Drug prediction",
+     "Fraud detection"
+    ],
+    "answers": [
+     "b",
+     "d",
+     "e"
+    ],
+    "solution": "Graph explainers are important in toxicity detection of molecules, drug prediction, fraud detection, etc."
+   },
+   {
+    "prompt": "Which of the following methods benefits the most from the FORGE framework?",
+    "options": [
+     "Attention-based methods",
+     "Surrogate-based methods",
+     "Gradient-based methods",
+     "Perturbation-based methods"
+    ],
+    "answers": [
+     "d"
+    ],
+    "solution": "Perturbation-based methods benefit the most from FORGE."
+   },
+   {
+    "prompt": "Based on the mathematical definitions of cell complexes presented in the FORGE slides, which of the following statements are correct? (Select all that apply.)",
+    "options": [
+     "A 0-cell corresponds to a vertex, while a 1-cell corresponds to an edge in traditional graphs.",
+     "The 1-skeleton X^(1) of a cell complex consists exclusively of 1-dimensional cells.",
+     "Vertical boundary relations connect two cells of the same dimension that share a common boundary.",
+     "Boundary relations in the framework are restricted to be undirected, meaning σ(c1,c2) = σ(c2,c1).",
+     "A p-cell c^(p) is considered a face or boundary of a (p + 1)-cell c^(p+1) if the set of points composing c^(p) is a subset of those composing c^(p+1)."
+    ],
+    "answers": [
+     "a",
+     "d",
+     "e"
+    ],
+    "solution": "A - Definition 3.1. B - Definition 3.4 states that X^(p) is a subcomplex of cells of dimension at most p, meaning both 0- and 1-cells. C - Definition 3.5 states horizontal boundary relations as linking two p-cells of the same dimension, whereas vertical boundary relations link cells of different dimensions. D - Definition 3.5. E - Definition 3.2."
+   }
+  ]
  }
 ]
