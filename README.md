@@ -69,4 +69,5 @@ npm run build
 - `questions.json` format per year: `[{ week, questions: [{ prompt, options: [...], answers: ["b"], solution?, images?: ["images/x.png"] }] }]`.
 - Questions with more than one entry in `answers` are multi-select: pick every correct option. In Rapid Fire
   mode a "Check Answer" button reveals the result.
+- Multi-select questions give partial marks: (correct options ticked − wrong options ticked) ÷ number of correct options, never below 0.
 - Numerical-answer questions (no options) are not included.

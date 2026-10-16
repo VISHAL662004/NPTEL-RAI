@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { AlertCircle, Bookmark, BookmarkCheck, Flag } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useQuiz } from '../context/QuizContext'
-import { formatDuration, joinAnswer, splitAnswer } from '../utils/quiz'
+import { formatDuration, joinAnswer, questionCredit, splitAnswer } from '../utils/quiz'
 
 export function QuizCard() {
   const {
@@ -32,7 +32,8 @@ export function QuizCard() {
     if (!question || !answer || !revealed) {
       return null
     }
-    return answer === question.correctAnswer ? 'correct' : 'incorrect'
+    const credit = questionCredit(question, answer)
+    return credit === 1 ? 'correct' : credit > 0 ? 'partial' : 'incorrect'
   }, [answer, question, revealed])
 
   const isLast = session.index === session.questions.length - 1
@@ -192,7 +193,7 @@ export function QuizCard() {
         <div className={`feedback ${instantState === 'correct' ? 'ok' : 'bad'}`}>
           <AlertCircle size={18} />
           <span>
-            {instantState === 'correct' ? 'Great hit.' : 'Not this one.'} Correct answer:{' '}
+            {instantState === 'correct' ? 'Great hit.' : instantState === 'partial' ? 'Partly right.' : 'Not this one.'} Correct answer:{' '}
             <strong>
               {correctKeys
                 .map((key) => `${key.toUpperCase()}. ${question.options.find((opt) => opt.key === key)?.text}`)

@@ -1,8 +1,10 @@
-import { CheckCircle2, CircleX, RotateCcw, Sparkles } from 'lucide-react'
+import { CheckCircle2, CircleX, MinusCircle, RotateCcw, Sparkles } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { useMemo } from 'react'
 import { useQuiz } from '../context/QuizContext'
-import { calculateScore, describeAnswer, weakAreas } from '../utils/quiz'
+import { calculateScore, describeAnswer, questionCredit, weakAreas } from '../utils/quiz'
+
+const formatMarks = (value: number) => (Number.isInteger(value) ? String(value) : value.toFixed(2))
 
 export function ResultsDashboard() {
   const { session, resetQuiz } = useQuiz()
@@ -37,7 +39,7 @@ export function ResultsDashboard() {
         <div>
           <h2>Performance Dashboard</h2>
           <p>
-            Score: {metrics.correct}/{session.questions.length} • Accuracy:{' '}
+            Score: {formatMarks(metrics.score)}/{session.questions.length} • Accuracy:{' '}
             {metrics.accuracy.toFixed(1)}%
           </p>
         </div>
@@ -82,7 +84,7 @@ export function ResultsDashboard() {
         <div className="radial-meta">
           <h3>Score Pulse</h3>
           <p>
-            Correct: {metrics.correct} • Incorrect: {metrics.incorrect}
+            Correct: {metrics.correct} • Partial: {metrics.partial} • Incorrect: {metrics.incorrect}
           </p>
           <p>
             {tone === 'excellent'
@@ -99,6 +101,11 @@ export function ResultsDashboard() {
           <CheckCircle2 size={18} />
           <h3>{metrics.correct}</h3>
           <p>Correct</p>
+        </article>
+        <article>
+          <MinusCircle size={18} />
+          <h3>{metrics.partial}</h3>
+          <p>Partial</p>
         </article>
         <article>
           <CircleX size={18} />
@@ -131,9 +138,10 @@ export function ResultsDashboard() {
         <div className="breakdown-list">
           {session.questions.map((question, index) => {
             const selected = session.answers[question.id]
-            const isCorrect = selected === question.correctAnswer
+            const credit = questionCredit(question, selected)
+            const status = credit === 1 ? 'correct' : credit > 0 ? 'partial' : 'incorrect'
             return (
-              <article key={question.id} className={`breakdown-item ${isCorrect ? 'correct' : 'incorrect'}`}>
+              <article key={question.id} className={`breakdown-item ${status}`}>
                 <p className="q-title">
                   Q{index + 1}. {question.prompt}
                 </p>
@@ -143,6 +151,7 @@ export function ResultsDashboard() {
                 <p>
                   Correct: <strong>{describeAnswer(question, question.correctAnswer)}</strong>
                 </p>
+                {status === 'partial' && <p>Partial marks: {formatMarks(credit)}/1</p>}
                 <p className="solution">Solution: {question.solution}</p>
               </article>
             )

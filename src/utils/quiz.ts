@@ -104,15 +104,40 @@ export function getPool(
   return pool
 }
 
+// Credit for one question, from 0 to 1. Single-answer questions are all or nothing. Multi-select
+// questions are marked partially: each correct option ticked earns 1/n of the credit and each wrong
+// option ticked takes 1/n away, never going below 0.
+export function questionCredit(question: Question, answer: string | undefined): number {
+  const selected = splitAnswer(answer)
+  if (!question.multi) {
+    return answer === question.correctAnswer ? 1 : 0
+  }
+  const correctKeys = splitAnswer(question.correctAnswer)
+  const hits = selected.filter((key) => correctKeys.includes(key)).length
+  const wrong = selected.length - hits
+  return Math.max(0, (hits - wrong) / correctKeys.length)
+}
+
 export function calculateScore(
   questions: Question[],
   answers: Record<string, string>,
-): { correct: number; incorrect: number; accuracy: number } {
-  const correct = questions.filter((q) => answers[q.id] === q.correctAnswer).length
-  const incorrect = questions.length - correct
-  const accuracy = questions.length > 0 ? (correct / questions.length) * 100 : 0
+): { score: number; correct: number; partial: number; incorrect: number; accuracy: number } {
+  let score = 0
+  let correct = 0
+  let partial = 0
+  for (const question of questions) {
+    const credit = questionCredit(question, answers[question.id])
+    score += credit
+    if (credit === 1) {
+      correct += 1
+    } else if (credit > 0) {
+      partial += 1
+    }
+  }
+  const incorrect = questions.length - correct - partial
+  const accuracy = questions.length > 0 ? (score / questions.length) * 100 : 0
 
-  return { correct, incorrect, accuracy }
+  return { score, correct, partial, incorrect, accuracy }
 }
 
 export function formatDuration(totalSeconds: number): string {
@@ -131,9 +156,7 @@ export function weakAreas(
     const label = `${question.year} / Week ${question.week}`
     const snapshot = byWeek.get(label) ?? { total: 0, correct: 0 }
     snapshot.total += 1
-    if (answers[question.id] === question.correctAnswer) {
-      snapshot.correct += 1
-    }
+    snapshot.correct += questionCredit(question, answers[question.id])
     byWeek.set(label, snapshot)
   }
 
