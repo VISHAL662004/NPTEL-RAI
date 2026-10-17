@@ -118,7 +118,7 @@ export function ControlPanel() {
           }}
           type="button"
         >
-          Shuffle questions
+          Shuffle questions + options
         </button>
         <button
           className={`select-btn ${customSource === 'random15' ? 'active' : ''}`}

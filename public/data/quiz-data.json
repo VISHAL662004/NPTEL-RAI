@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T14:15:30.292Z",
+  "generatedAt": "2026-10-17T12:12:10.933Z",
   "years": [
     {
       "year": "2024",
@@ -5028,11 +5028,12 @@
                   "text": "Decreasing model complexity results in low bias but high variance."
                 }
               ],
-              "correctAnswer": "b",
-              "correctText": "A model with high variance leads to overfitting of the model.",
+              "correctAnswer": "a,b",
+              "correctText": "A model with high bias leads to underfitting of the model. | A model with high variance leads to overfitting of the model.",
               "solution": "Solution not found in source text.",
               "year": "2025",
-              "week": 0
+              "week": 0,
+              "multi": true
             },
             {
               "id": "2025-W0-Q4",
@@ -5144,6 +5145,33 @@
             },
             {
               "id": "2025-W0-Q8",
+              "prompt": "What is the purpose of a validation dataset?",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "To train the model on new data."
+                },
+                {
+                  "key": "b",
+                  "text": "To test the final accuracy of the model."
+                },
+                {
+                  "key": "c",
+                  "text": "To tune the hyperparameters and prevent overfitting."
+                },
+                {
+                  "key": "d",
+                  "text": "All of the above."
+                }
+              ],
+              "correctAnswer": "c",
+              "correctText": "To tune the hyperparameters and prevent overfitting.",
+              "solution": "Solution not found in source text.",
+              "year": "2025",
+              "week": 0
+            },
+            {
+              "id": "2025-W0-Q9",
               "prompt": "What is the bias-variance tradeoff in machine learning?",
               "options": [
                 {
@@ -5170,7 +5198,7 @@
               "week": 0
             },
             {
-              "id": "2025-W0-Q9",
+              "id": "2025-W0-Q10",
               "prompt": "Which of the following is an example of supervised learning?",
               "options": [
                 {
@@ -5197,7 +5225,7 @@
               "week": 0
             },
             {
-              "id": "2025-W0-Q10",
+              "id": "2025-W0-Q11",
               "prompt": "What is the definition of “algorithmic bias”?",
               "options": [
                 {
@@ -5224,7 +5252,7 @@
               "week": 0
             },
             {
-              "id": "2025-W0-Q11",
+              "id": "2025-W0-Q12",
               "prompt": "What is the difference between supervised and unsupervised learning?",
               "options": [
                 {
@@ -5392,6 +5420,33 @@
             },
             {
               "id": "2025-W1-Q6",
+              "prompt": "A factory robot confuses a human worker for a box of vegetables and pushes the person, resulting in death.\" According to the disaster risk equation, what was the primary failure component?",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "Hazard (misclassification capability)"
+                },
+                {
+                  "key": "b",
+                  "text": "Hazard Exposure (human-robot proximity)"
+                },
+                {
+                  "key": "c",
+                  "text": "Vulnerability (employee safety protocols)"
+                },
+                {
+                  "key": "d",
+                  "text": "All components failed equally"
+                }
+              ],
+              "correctAnswer": "a",
+              "correctText": "Hazard (misclassification capability)",
+              "solution": "Solution not found in source text.",
+              "year": "2025",
+              "week": 1
+            },
+            {
+              "id": "2025-W1-Q7",
               "prompt": "According to the risk taxonomy presented, malicious use of AI differs from rogue AI primarily in that:",
               "options": [
                 {
@@ -5418,7 +5473,7 @@
               "week": 1
             },
             {
-              "id": "2025-W1-Q7",
+              "id": "2025-W1-Q8",
               "prompt": "Deceptive Alignment in AI systems is:",
               "options": [
                 {
@@ -5445,7 +5500,61 @@
               "week": 1
             },
             {
-              "id": "2025-W1-Q8",
+              "id": "2025-W1-Q9",
+              "prompt": "How do you identify and avoid hazards in ML systems according to the disaster risk equation framework?",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "Alignment"
+                },
+                {
+                  "key": "b",
+                  "text": "Robustness"
+                },
+                {
+                  "key": "c",
+                  "text": "Monitoring"
+                },
+                {
+                  "key": "d",
+                  "text": "Systemic Safety"
+                }
+              ],
+              "correctAnswer": "b",
+              "correctText": "Robustness",
+              "solution": "Solution not found in source text.",
+              "year": "2025",
+              "week": 1
+            },
+            {
+              "id": "2025-W1-Q10",
+              "prompt": "Red teaming in AI safety primarily serves to:",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "Accelerate model training"
+                },
+                {
+                  "key": "b",
+                  "text": "Identify system vulnerabilities"
+                },
+                {
+                  "key": "c",
+                  "text": "Improve computational efficiency"
+                },
+                {
+                  "key": "d",
+                  "text": "Reduce inference latency"
+                }
+              ],
+              "correctAnswer": "b",
+              "correctText": "Identify system vulnerabilities",
+              "solution": "Solution not found in source text.",
+              "year": "2025",
+              "week": 1
+            },
+            {
+              "id": "2025-W1-Q11",
               "prompt": "Which technique is most effective for detecting deceptive alignment?",
               "options": [
                 {
@@ -5472,7 +5581,7 @@
               "week": 1
             },
             {
-              "id": "2025-W1-Q9",
+              "id": "2025-W1-Q12",
               "prompt": "RoBERTa succeeds in reasoning tasks where BERT fails due to:",
               "options": [
                 {
@@ -5505,6 +5614,87 @@
           "questions": [
             {
               "id": "2025-W2-Q1",
+              "prompt": "Which of the following is true?",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "Extremistan has thin tails while Mediocristan has long tails"
+                },
+                {
+                  "key": "b",
+                  "text": "Mediocristan distributions are harder to predict than Extremistan"
+                },
+                {
+                  "key": "c",
+                  "text": "In Extremistan, the total is determined by a few large events with tyranny of the accidental"
+                },
+                {
+                  "key": "d",
+                  "text": "Extremistan has mild randomness while Mediocristan has wild randomness"
+                }
+              ],
+              "correctAnswer": "c",
+              "correctText": "In Extremistan, the total is determined by a few large events with tyranny of the accidental",
+              "solution": "Solution not found in source text.",
+              "year": "2025",
+              "week": 2
+            },
+            {
+              "id": "2025-W2-Q2",
+              "prompt": "What is the key difference between covariate shift and concept shift in distribution shifts?",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "Covariate shift changes P(y|x) while concept shift changes P(x)"
+                },
+                {
+                  "key": "b",
+                  "text": "Covariate shift changes P(x) while P(y|x) remains constant, concept shift changes P(y|x) while P(x) remains constant"
+                },
+                {
+                  "key": "c",
+                  "text": "Both change P(x) and P(y|x) simultaneously"
+                },
+                {
+                  "key": "d",
+                  "text": "Covariate shift affects labels while concept shift affects features"
+                }
+              ],
+              "correctAnswer": "b",
+              "correctText": "Covariate shift changes P(x) while P(y|x) remains constant, concept shift changes P(y|x) while P(x) remains constant",
+              "solution": "Solution not found in source text.",
+              "year": "2025",
+              "week": 2
+            },
+            {
+              "id": "2025-W2-Q3",
+              "prompt": "In the AugMix methodology, what is the primary advantage over uncontrolled random augmentations?",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "It uses skip connections to keep images recognizable while applying diverse augmentations"
+                },
+                {
+                  "key": "b",
+                  "text": "It requires less computational power"
+                },
+                {
+                  "key": "c",
+                  "text": "It only applies single augmentations instead of multiple"
+                },
+                {
+                  "key": "d",
+                  "text": "It focuses on geometric transformations only"
+                }
+              ],
+              "correctAnswer": "a",
+              "correctText": "It uses skip connections to keep images recognizable while applying diverse augmentations",
+              "solution": "Solution not found in source text.",
+              "year": "2025",
+              "week": 2
+            },
+            {
+              "id": "2025-W2-Q4",
               "prompt": "In the context of adversarial attacks, what does \"transferability\" specifically refer to?",
               "options": [
                 {
@@ -5531,7 +5721,7 @@
               "week": 2
             },
             {
-              "id": "2025-W2-Q2",
+              "id": "2025-W2-Q5",
               "prompt": "Black Swan lies in which of the following categories?",
               "options": [
                 {
@@ -5558,7 +5748,7 @@
               "week": 2
             },
             {
-              "id": "2025-W2-Q3",
+              "id": "2025-W2-Q6",
               "prompt": "Which of the following are valid approaches for defending against adversarial attacks? (Select all that apply)",
               "options": [
                 {
@@ -5590,7 +5780,7 @@
               "multi": true
             },
             {
-              "id": "2025-W2-Q4",
+              "id": "2025-W2-Q7",
               "prompt": "In the RLHF optimization objective, why is a KL-divergence penalty term added to the reward maximization?",
               "options": [
                 {
@@ -5617,7 +5807,7 @@
               "week": 2
             },
             {
-              "id": "2025-W2-Q5",
+              "id": "2025-W2-Q8",
               "prompt": "What does \"reward hacking\" specifically refer to in the context of RLHF?",
               "options": [
                 {
@@ -5644,7 +5834,34 @@
               "week": 2
             },
             {
-              "id": "2025-W2-Q6",
+              "id": "2025-W2-Q9",
+              "prompt": "Identify the equations that can lead to a long-tailed distribution.",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "Idea * student * resources * time"
+                },
+                {
+                  "key": "b",
+                  "text": "Idea * student + resources * time"
+                },
+                {
+                  "key": "c",
+                  "text": "Idea + student + resource + time"
+                },
+                {
+                  "key": "d",
+                  "text": "Idea - student * resource - time"
+                }
+              ],
+              "correctAnswer": "a",
+              "correctText": "Idea * student * resources * time",
+              "solution": "Solution not found in source text.",
+              "year": "2025",
+              "week": 2
+            },
+            {
+              "id": "2025-W2-Q10",
               "prompt": "What is the primary advantage of using pairwise comparisons over direct scalar ratings in human feedback collection?",
               "options": [
                 {
@@ -5671,7 +5888,7 @@
               "week": 2
             },
             {
-              "id": "2025-W2-Q7",
+              "id": "2025-W2-Q11",
               "prompt": "What is a major challenge with using a single reward function in RLHF?",
               "options": [
                 {
@@ -5698,7 +5915,7 @@
               "week": 2
             },
             {
-              "id": "2025-W2-Q8",
+              "id": "2025-W2-Q12",
               "prompt": "What is Direct Preference Optimization (DPO) equivalent to in the context of RLHF component removal?",
               "options": [
                 {
@@ -5790,6 +6007,33 @@
             },
             {
               "id": "2025-W3-Q3",
+              "prompt": "What is GDPR’s Article 17 about in the context of Machine Learning?",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "Right to be remembered"
+                },
+                {
+                  "key": "b",
+                  "text": "Right to be modified"
+                },
+                {
+                  "key": "c",
+                  "text": "Right to be distributed"
+                },
+                {
+                  "key": "d",
+                  "text": "Right to be forgotten"
+                }
+              ],
+              "correctAnswer": "d",
+              "correctText": "Right to be forgotten",
+              "solution": "Solution not found in source text.",
+              "year": "2025",
+              "week": 3
+            },
+            {
+              "id": "2025-W3-Q4",
               "prompt": "What are the steps in the SISA approach?",
               "options": [
                 {
@@ -5816,7 +6060,7 @@
               "week": 3
             },
             {
-              "id": "2025-W3-Q4",
+              "id": "2025-W3-Q5",
               "prompt": "What is Membership Inference Attack (MIA) used for?",
               "options": [
                 {
@@ -5843,7 +6087,7 @@
               "week": 3
             },
             {
-              "id": "2025-W3-Q5",
+              "id": "2025-W3-Q6",
               "prompt": "What is the role of differential privacy?",
               "options": [
                 {
@@ -5870,7 +6114,7 @@
               "week": 3
             },
             {
-              "id": "2025-W3-Q6",
+              "id": "2025-W3-Q7",
               "prompt": "Which benchmarks are used to evaluate unlearning in LLMs? (Select all that apply.)",
               "options": [
                 {
@@ -5898,7 +6142,7 @@
               "multi": true
             },
             {
-              "id": "2025-W3-Q7",
+              "id": "2025-W3-Q8",
               "prompt": "Case: A hospital wants to share patient health data with research institutions to support public health studies. However, it must ensure that a patient's identity cannot be inferred. To achieve this, the hospital generates and sends aggregate statistics to […] institute. Which form of unlearning is this?",
               "options": [
                 {
@@ -5925,7 +6169,7 @@
               "week": 3
             },
             {
-              "id": "2025-W3-Q8",
+              "id": "2025-W3-Q9",
               "prompt": "Which isn't a type of graph unlearning?",
               "options": [
                 {
@@ -5952,7 +6196,7 @@
               "week": 3
             },
             {
-              "id": "2025-W3-Q9",
+              "id": "2025-W3-Q10",
               "prompt": "Which methods are used for Node unlearning? (Select all that apply.)",
               "options": [
                 {
@@ -5988,7 +6232,7 @@
               "multi": true
             },
             {
-              "id": "2025-W3-Q10",
+              "id": "2025-W3-Q11",
               "prompt": "What are “hidden representations”?",
               "options": [
                 {
@@ -6437,6 +6681,33 @@
             },
             {
               "id": "2025-W5-Q3",
+              "prompt": "In counterfactual data augmentation (CDA), what is altered to rebalance the corpus?",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "Sentence Length"
+                },
+                {
+                  "key": "b",
+                  "text": "Syntax"
+                },
+                {
+                  "key": "c",
+                  "text": "Bias attribute words"
+                },
+                {
+                  "key": "d",
+                  "text": "Vocabulary complexity"
+                }
+              ],
+              "correctAnswer": "c",
+              "correctText": "Bias attribute words",
+              "solution": "Solution not found in source text.",
+              "year": "2025",
+              "week": 5
+            },
+            {
+              "id": "2025-W5-Q4",
               "prompt": "Which characteristic makes a language model more likely to generate gender-neutral responses in text-to-text tasks? (Select all that apply.)",
               "options": [
                 {
@@ -6464,7 +6735,7 @@
               "multi": true
             },
             {
-              "id": "2025-W5-Q4",
+              "id": "2025-W5-Q5",
               "prompt": "Which toolkit is used to add programmable guardrails to LLM-based conversational applications like ChatGPT?",
               "options": [
                 {
@@ -6491,7 +6762,7 @@
               "week": 5
             },
             {
-              "id": "2025-W5-Q5",
+              "id": "2025-W5-Q6",
               "prompt": "Which of the following is the correct formula for Pointwise Mutual Information (PMI)?",
               "options": [
                 {
@@ -6518,7 +6789,7 @@
               "week": 5
             },
             {
-              "id": "2025-W5-Q6",
+              "id": "2025-W5-Q7",
               "prompt": "'Useful fairness' couples which of the following? (Select all that apply.)",
               "options": [
                 {
@@ -6546,7 +6817,7 @@
               "multi": true
             },
             {
-              "id": "2025-W5-Q7",
+              "id": "2025-W5-Q8",
               "prompt": "What is the key architectural idea behind the MAFIA model for effective debiasing?",
               "options": [
                 {
@@ -6573,7 +6844,7 @@
               "week": 5
             },
             {
-              "id": "2025-W5-Q8",
+              "id": "2025-W5-Q9",
               "prompt": "Which of the following is true about proprietary models?",
               "options": [
                 {
@@ -6600,7 +6871,7 @@
               "week": 5
             },
             {
-              "id": "2025-W5-Q9",
+              "id": "2025-W5-Q10",
               "prompt": "Which of the following are benchmark datasets commonly used to measure bias in language models? (Select all that apply.)",
               "options": [
                 {
@@ -6632,7 +6903,7 @@
               "multi": true
             },
             {
-              "id": "2025-W5-Q10",
+              "id": "2025-W5-Q11",
               "prompt": "What is 'gender-bleaching' in the context of VLMs?",
               "options": [
                 {
@@ -6659,7 +6930,7 @@
               "week": 5
             },
             {
-              "id": "2025-W5-Q11",
+              "id": "2025-W5-Q12",
               "prompt": "Why might a single adapter for all bias types (like iDEBall) fail?",
               "options": [
                 {
@@ -6774,6 +7045,33 @@
             },
             {
               "id": "2025-W6-Q4",
+              "prompt": "What characterizes an ideal privacy model?",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "Maximum utility with zero privacy guarantees"
+                },
+                {
+                  "key": "b",
+                  "text": "Perfect privacy with minimal utility"
+                },
+                {
+                  "key": "c",
+                  "text": "Balanced trade-off between utility and privacy requirements"
+                },
+                {
+                  "key": "d",
+                  "text": "Complete data suppression for absolute privacy"
+                }
+              ],
+              "correctAnswer": "c",
+              "correctText": "Balanced trade-off between utility and privacy requirements",
+              "solution": "Solution not found in source text.",
+              "year": "2025",
+              "week": 6
+            },
+            {
+              "id": "2025-W6-Q5",
               "prompt": "Given: Xi represents truth, Yi represents randomized value of Xi, and Zi = (Yi − (1/(1+e^ε))) × (e^ε+1)/(e^ε−1). What is the expected value Zi?",
               "options": [
                 {
@@ -6800,7 +7098,7 @@
               "week": 6
             },
             {
-              "id": "2025-W6-Q5",
+              "id": "2025-W6-Q6",
               "prompt": "In the randomized response model, which statements are correct? Select all that apply.",
               "options": [
                 {
@@ -6820,15 +7118,15 @@
                   "text": "Utility guarantee scales with √n"
                 }
               ],
-              "correctAnswer": "c,d",
-              "correctText": "Higher ε values provide stronger utility | Utility guarantee scales with √n",
+              "correctAnswer": "a,c,d",
+              "correctText": "Privacy guarantee can be controlled by parameter ε | Higher ε values provide stronger utility | Utility guarantee scales with √n",
               "solution": "Solution not found in source text.",
               "year": "2025",
               "week": 6,
               "multi": true
             },
             {
-              "id": "2025-W6-Q6",
+              "id": "2025-W6-Q7",
               "prompt": "Consider datasets: X = {x1, x2, ..., xN} (truth), Y = {y1, y2, ..., yN} (revealed values). To derive better estimators Z = {z1, z2, ..., zN} from Y, What process is required?",
               "options": [
                 {
@@ -6855,7 +7153,7 @@
               "week": 6
             },
             {
-              "id": "2025-W6-Q7",
+              "id": "2025-W6-Q8",
               "prompt": "Which factors directly influence the privacy guarantee in differential privacy mechanisms? Select all that apply.",
               "options": [
                 {
@@ -6883,7 +7181,7 @@
               "multi": true
             },
             {
-              "id": "2025-W6-Q8",
+              "id": "2025-W6-Q9",
               "prompt": "Which trust scenario correctly describes the differential privacy model?",
               "options": [
                 {
@@ -6910,7 +7208,7 @@
               "week": 6
             },
             {
-              "id": "2025-W6-Q9",
+              "id": "2025-W6-Q10",
               "prompt": "For fixed privacy levels, how do sample size requirements differ between Laplacian mechanism and Randomized response?",
               "options": [
                 {
@@ -6930,14 +7228,14 @@
                   "text": "Quadratic factor difference"
                 }
               ],
-              "correctAnswer": "b",
-              "correctText": "Exponential factor difference",
+              "correctAnswer": "a",
+              "correctText": "Constant factor difference",
               "solution": "Solution not found in source text.",
               "year": "2025",
               "week": 6
             },
             {
-              "id": "2025-W6-Q10",
+              "id": "2025-W6-Q11",
               "prompt": "Higher privacy guarantees can be achieved in which scenarios? Select all correct options.",
               "options": [
                 {
@@ -6969,7 +7267,7 @@
               "multi": true
             },
             {
-              "id": "2025-W6-Q11",
+              "id": "2025-W6-Q12",
               "prompt": "In the context of randomized response, what happens to utility as privacy guarantees increase?",
               "options": [
                 {
@@ -7385,6 +7683,33 @@
             },
             {
               "id": "2025-W8-Q4",
+              "prompt": "Optimized-mask saliency methods (optimize a mask that when applied alters prediction) are brittle because:",
+              "options": [
+                {
+                  "key": "a",
+                  "text": "Their masks always converge to a single-pixel trigger."
+                },
+                {
+                  "key": "b",
+                  "text": "They require closed-form solutions for mask gradients."
+                },
+                {
+                  "key": "c",
+                  "text": "Results strongly depend on mask initialization and hyperparameters."
+                },
+                {
+                  "key": "d",
+                  "text": "They are invariant to adversarial perturbations."
+                }
+              ],
+              "correctAnswer": "c",
+              "correctText": "Results strongly depend on mask initialization and hyperparameters.",
+              "solution": "Solution not found in source text.",
+              "year": "2025",
+              "week": 8
+            },
+            {
+              "id": "2025-W8-Q5",
               "prompt": "For token-level gradient saliency in text, a large gradient magnitude for a token most reliably indicates:",
               "options": [
                 {
@@ -7411,7 +7736,7 @@
               "week": 8
             },
             {
-              "id": "2025-W8-Q5",
+              "id": "2025-W8-Q6",
               "prompt": "Which of the following is NOT a name commonly associated with pixel attribution methods?",
               "options": [
                 {
@@ -7438,7 +7763,7 @@
               "week": 8
             },
             {
-              "id": "2025-W8-Q6",
+              "id": "2025-W8-Q7",
               "prompt": "Which of the following are realistic attack vectors for implanting Trojans into neural networks?",
               "options": [
                 {
@@ -7470,7 +7795,7 @@
               "multi": true
             },
             {
-              "id": "2025-W8-Q7",
+              "id": "2025-W8-Q8",
               "prompt": "Defenses that reverse-engineer potential triggers (e.g., via optimization) rely on which observations?",
               "options": [
                 {
@@ -7502,7 +7827,7 @@
               "multi": true
             },
             {
-              "id": "2025-W8-Q8",
+              "id": "2025-W8-Q9",
               "prompt": "How does Guided BackProp differ from standard backpropagation in generating saliency maps?",
               "options": [
                 {
@@ -7529,7 +7854,7 @@
               "week": 8
             },
             {
-              "id": "2025-W8-Q9",
+              "id": "2025-W8-Q10",
               "prompt": "In the context of mechanistic interpretability, what do inhibitory connections in neural circuits primarily accomplish?",
               "options": [
                 {
@@ -7556,7 +7881,7 @@
               "week": 8
             },
             {
-              "id": "2025-W8-Q10",
+              "id": "2025-W8-Q11",
               "prompt": "What is the primary limitation of LIME's local explanations?",
               "options": [
                 {
@@ -8185,8 +8510,8 @@
                   "text": "The challenge of assigning legal responsibility when AI systems cause harm."
                 }
               ],
-              "correctAnswer": "c,d",
-              "correctText": "The environmental impact, particularly energy and water consumption. | The challenge of assigning legal responsibility when AI systems cause harm.",
+              "correctAnswer": "a,c,d",
+              "correctText": "The need for international regulation based on fundamental human rights. | The environmental impact, particularly energy and water consumption. | The challenge of assigning legal responsibility when AI systems cause harm.",
               "solution": "Solution not found in source text.",
               "year": "2025",
               "week": 10,

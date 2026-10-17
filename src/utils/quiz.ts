@@ -21,6 +21,28 @@ function shuffleArray<T>(arr: T[]): T[] {
   return copy
 }
 
+// Options that point at each other ("All of the above", "Both A and B") only make sense in their
+// original order, so those questions keep their options where they are.
+const POSITION_DEPENDENT = /of the above|of these|\b(both|option|options)\s+[a-e]\b|\b[a-e]\s+(and|&)\s+[a-e]\b|\b[a-e]\s+or\s+[a-e]\b/i
+
+// Shuffles the options, re-labels them a, b, c... and re-maps the correct answer to the new labels.
+export function shuffleOptions(question: Question): Question {
+  if (question.options.some((option) => POSITION_DEPENDENT.test(option.text))) {
+    return question
+  }
+  const keys = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+  const correct = new Set(splitAnswer(question.correctAnswer))
+  const options = shuffleArray(question.options).map((option, index) => ({
+    option,
+    key: keys[index],
+  }))
+  return {
+    ...question,
+    options: options.map(({ option, key }) => ({ key, text: option.text })),
+    correctAnswer: joinAnswer(options.filter(({ option }) => correct.has(option.key)).map(({ key }) => key)),
+  }
+}
+
 function getRandomSubset<T>(arr: T[], count: number): T[] {
   const shuffled = shuffleArray(arr)
   return shuffled.slice(0, Math.min(count, arr.length))
@@ -48,14 +70,14 @@ export function getPool(
     )
 
     if (customQuizOrder === 'shuffle') {
-      pool = shuffleArray(pool)
+      pool = shuffleArray(pool).map(shuffleOptions)
     }
   } else {
     // Handle different shuffle modes
     if (selection.shuffle === 'random15') {
       // Get 15 random questions from entire dataset
       const allQuestions = flattenQuestions(dataset)
-      pool = getRandomSubset(allQuestions, 15)
+      pool = getRandomSubset(allQuestions, 15).map(shuffleOptions)
     } else if (selection.shuffle === 'year') {
       // Shuffle questions within selected year
       pool = flattenQuestions(dataset)

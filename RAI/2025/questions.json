@@ -35,6 +35,7 @@
      "Decreasing model complexity results in low bias but high variance."
     ],
     "answers": [
+     "a",
      "b"
     ]
    },
@@ -81,6 +82,18 @@
      "The AI system may become human.",
      "The AI system causes harm.",
      "None of the above."
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "What is the purpose of a validation dataset?",
+    "options": [
+     "To train the model on new data.",
+     "To test the final accuracy of the model.",
+     "To tune the hyperparameters and prevent overfitting.",
+     "All of the above."
     ],
     "answers": [
      "c"
@@ -200,6 +213,18 @@
     ]
    },
    {
+    "prompt": "A factory robot confuses a human worker for a box of vegetables and pushes the person, resulting in death.\" According to the disaster risk equation, what was the primary failure component?",
+    "options": [
+     "Hazard (misclassification capability)",
+     "Hazard Exposure (human-robot proximity)",
+     "Vulnerability (employee safety protocols)",
+     "All components failed equally"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
+   {
     "prompt": "According to the risk taxonomy presented, malicious use of AI differs from rogue AI primarily in that:",
     "options": [
      "Malicious use involves intentional harmful deployment by humans, while rogue AI acts independently",
@@ -218,6 +243,30 @@
      "AI systems that appear to be following instructions but are actually pursuing different goals",
      "AI systems that cannot understand human language properly",
      "AI systems that work too slowly to be effective"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "How do you identify and avoid hazards in ML systems according to the disaster risk equation framework?",
+    "options": [
+     "Alignment",
+     "Robustness",
+     "Monitoring",
+     "Systemic Safety"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "Red teaming in AI safety primarily serves to:",
+    "options": [
+     "Accelerate model training",
+     "Identify system vulnerabilities",
+     "Improve computational efficiency",
+     "Reduce inference latency"
     ],
     "answers": [
      "b"
@@ -252,6 +301,42 @@
  {
   "week": 2,
   "questions": [
+   {
+    "prompt": "Which of the following is true?",
+    "options": [
+     "Extremistan has thin tails while Mediocristan has long tails",
+     "Mediocristan distributions are harder to predict than Extremistan",
+     "In Extremistan, the total is determined by a few large events with tyranny of the accidental",
+     "Extremistan has mild randomness while Mediocristan has wild randomness"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "What is the key difference between covariate shift and concept shift in distribution shifts?",
+    "options": [
+     "Covariate shift changes P(y|x) while concept shift changes P(x)",
+     "Covariate shift changes P(x) while P(y|x) remains constant, concept shift changes P(y|x) while P(x) remains constant",
+     "Both change P(x) and P(y|x) simultaneously",
+     "Covariate shift affects labels while concept shift affects features"
+    ],
+    "answers": [
+     "b"
+    ]
+   },
+   {
+    "prompt": "In the AugMix methodology, what is the primary advantage over uncontrolled random augmentations?",
+    "options": [
+     "It uses skip connections to keep images recognizable while applying diverse augmentations",
+     "It requires less computational power",
+     "It only applies single augmentations instead of multiple",
+     "It focuses on geometric transformations only"
+    ],
+    "answers": [
+     "a"
+    ]
+   },
    {
     "prompt": "In the context of adversarial attacks, what does \"transferability\" specifically refer to?",
     "options": [
@@ -313,6 +398,18 @@
     ],
     "answers": [
      "d"
+    ]
+   },
+   {
+    "prompt": "Identify the equations that can lead to a long-tailed distribution.",
+    "options": [
+     "Idea * student * resources * time",
+     "Idea * student + resources * time",
+     "Idea + student + resource + time",
+     "Idea - student * resource - time"
+    ],
+    "answers": [
+     "a"
     ]
    },
    {
@@ -381,6 +478,18 @@
      "a",
      "b",
      "e"
+    ]
+   },
+   {
+    "prompt": "What is GDPR’s Article 17 about in the context of Machine Learning?",
+    "options": [
+     "Right to be remembered",
+     "Right to be modified",
+     "Right to be distributed",
+     "Right to be forgotten"
+    ],
+    "answers": [
+     "d"
     ]
    },
    {
@@ -680,6 +789,18 @@
     ]
    },
    {
+    "prompt": "In counterfactual data augmentation (CDA), what is altered to rebalance the corpus?",
+    "options": [
+     "Sentence Length",
+     "Syntax",
+     "Bias attribute words",
+     "Vocabulary complexity"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
     "prompt": "Which characteristic makes a language model more likely to generate gender-neutral responses in text-to-text tasks? (Select all that apply.)",
     "options": [
      "Training on diverse and balanced datasets.",
@@ -835,6 +956,18 @@
     ]
    },
    {
+    "prompt": "What characterizes an ideal privacy model?",
+    "options": [
+     "Maximum utility with zero privacy guarantees",
+     "Perfect privacy with minimal utility",
+     "Balanced trade-off between utility and privacy requirements",
+     "Complete data suppression for absolute privacy"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
     "prompt": "Given: Xi represents truth, Yi represents randomized value of Xi, and Zi = (Yi − (1/(1+e^ε))) × (e^ε+1)/(e^ε−1). What is the expected value Zi?",
     "options": [
      "E[Zi] = Yi",
@@ -855,6 +988,7 @@
      "Utility guarantee scales with √n"
     ],
     "answers": [
+     "a",
      "c",
      "d"
     ]
@@ -906,7 +1040,7 @@
      "Quadratic factor difference"
     ],
     "answers": [
-     "b"
+     "a"
     ]
    },
    {
@@ -1108,6 +1242,18 @@
      "ProtoPNet",
      "StyleGAN3",
      "None of the above"
+    ],
+    "answers": [
+     "c"
+    ]
+   },
+   {
+    "prompt": "Optimized-mask saliency methods (optimize a mask that when applied alters prediction) are brittle because:",
+    "options": [
+     "Their masks always converge to a single-pixel trigger.",
+     "They require closed-form solutions for mask gradients.",
+     "Results strongly depend on mask initialization and hyperparameters.",
+     "They are invariant to adversarial perturbations."
     ],
     "answers": [
      "c"
@@ -1477,6 +1623,7 @@
      "The challenge of assigning legal responsibility when AI systems cause harm."
     ],
     "answers": [
+     "a",
      "c",
      "d"
     ]

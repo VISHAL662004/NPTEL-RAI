@@ -70,4 +70,5 @@ npm run build
 - Questions with more than one entry in `answers` are multi-select: pick every correct option. In Rapid Fire
   mode a "Check Answer" button reveals the result.
 - Multi-select questions give partial marks: (correct options ticked − wrong options ticked) ÷ number of correct options, never below 0.
+- "Shuffle questions + options" randomizes the question order and the option order (options are re-labelled a, b, c… and the answer key follows). Questions whose options refer to each other, such as "All of the above", keep their original option order.
 - Numerical-answer questions (no options) are not included.
