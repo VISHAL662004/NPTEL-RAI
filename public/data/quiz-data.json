@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T12:48:23.757Z",
+  "generatedAt": "2026-10-17T14:59:51.062Z",
   "years": [
     {
       "year": "2024",
@@ -10822,6 +10822,18 @@
             },
             {
               "id": "2026-W5-Q9",
+              "prompt": "You are performing a bias audit on a corpus with N = 1000 total documents. Calculate the PMI between an identity label w_i and a specific descriptive word w_j. The identity label appears in 100 documents. The descriptive word appears in 50 documents. Both words co-occur in the same document 20 times.",
+              "options": [],
+              "correctAnswer": "2",
+              "correctText": "2",
+              "solution": "PMI(w_i, w_j) = log2( N · c(w_i, w_j) / (c(w_i) · c(w_j)) ) = log2( 1000 · 20 / (100 · 50) ) = log2(4) = 2.",
+              "year": "2026",
+              "week": 5,
+              "numeric": true,
+              "tolerance": 0.01
+            },
+            {
+              "id": "2026-W5-Q10",
               "prompt": "What is the minimum threshold a word has to appear in the corpus for it to be considered when performing word association analysis?",
               "options": [
                 {
@@ -10848,7 +10860,7 @@
               "week": 5
             },
             {
-              "id": "2026-W5-Q10",
+              "id": "2026-W5-Q11",
               "prompt": "What is the \"Gender-bleached\" input method used for?",
               "options": [
                 {
@@ -10875,7 +10887,7 @@
               "week": 5
             },
             {
-              "id": "2026-W5-Q11",
+              "id": "2026-W5-Q12",
               "prompt": "What is the main goal of the COBIAS framework when assessing bias?",
               "options": [
                 {
@@ -11048,6 +11060,18 @@
             },
             {
               "id": "2026-W6-Q6",
+              "prompt": "An organization surveys 100 people and asks whether they voted for a certain party. To protect respondents' privacy, the organization uses the randomized response technique with ε = 0.5. Out of 100 respondents, 60 reported “Yes” and 40 reported “No.” Estimate the true number of people whose actual answer was “Yes”. Round to the nearest whole number.",
+              "options": [],
+              "correctAnswer": "91",
+              "correctText": "91",
+              "solution": "Data Privacy - with ε = 0.5 a response is truthful with probability e^ε / (1 + e^ε) ≈ 0.6225, so the estimate is (60 − 100·(1 − 0.6225)) / (2·0.6225 − 1) ≈ 91.",
+              "year": "2026",
+              "week": 6,
+              "numeric": true,
+              "tolerance": 0.5
+            },
+            {
+              "id": "2026-W6-Q7",
               "prompt": "Which trust scenario correctly describes the differential privacy model?",
               "options": [
                 {
@@ -11074,7 +11098,7 @@
               "week": 6
             },
             {
-              "id": "2026-W6-Q7",
+              "id": "2026-W6-Q8",
               "prompt": "In the Laplace Mechanism, how is the sensitivity (Δ) defined for a function f?",
               "options": [
                 {
@@ -11101,7 +11125,7 @@
               "week": 6
             },
             {
-              "id": "2026-W6-Q8",
+              "id": "2026-W6-Q9",
               "prompt": "According to Cynthia Dwork's definition of ε-differential privacy, for all neighbouring datasets X and X', the probability that a mechanism M on X generates an output in subset S divided by the probability that a mechanism M on X' generates an output in subset S is at most:",
               "options": [
                 {
@@ -11128,7 +11152,7 @@
               "week": 6
             },
             {
-              "id": "2026-W6-Q9",
+              "id": "2026-W6-Q10",
               "prompt": "What property of neighboring data sets X and X' is used to prove the privacy guarantee of Randomized Response?",
               "options": [
                 {
@@ -11155,7 +11179,7 @@
               "week": 6
             },
             {
-              "id": "2026-W6-Q10",
+              "id": "2026-W6-Q11",
               "prompt": "For a fixed ε, if a function being computed is highly sensitive (large Δ), how does it affect the noise added to the Laplace mechanism?",
               "options": [
                 {
@@ -11182,7 +11206,7 @@
               "week": 6
             },
             {
-              "id": "2026-W6-Q11",
+              "id": "2026-W6-Q12",
               "prompt": "Comparing the Laplace mechanism and randomized response, how does the required number of respondents n differ to achieve the same privacy–utility trade-off?",
               "options": [
                 {
@@ -11324,6 +11348,18 @@
             },
             {
               "id": "2026-W7-Q5",
+              "prompt": "There are three buyers whose valuations are 15, 20, and 135, respectively. What is the absolute difference in revenue when the price of a digital good changes from 14 to 18? (Round your answer to the nearest whole number.)",
+              "options": [],
+              "correctAnswer": "6",
+              "correctText": "6",
+              "solution": "Exponential Mechanism - revenue at price 14 is 3 × 14 = 42 and at price 18 is 2 × 18 = 36 (the buyer valuing it at 15 no longer buys), so the difference is 6.",
+              "year": "2026",
+              "week": 7,
+              "numeric": true,
+              "tolerance": 0.5
+            },
+            {
+              "id": "2026-W7-Q6",
               "prompt": "How does the Exponential Mechanism select a price h ∈ H?",
               "options": [
                 {
@@ -11350,7 +11386,7 @@
               "week": 7
             },
             {
-              "id": "2026-W7-Q6",
+              "id": "2026-W7-Q7",
               "prompt": "What privacy guarantee does the Exponential Mechanism provide for buyers' valuations?",
               "options": [
                 {
@@ -11377,7 +11413,7 @@
               "week": 7
             },
             {
-              "id": "2026-W7-Q7",
+              "id": "2026-W7-Q8",
               "prompt": "What is the utility guarantee provided by the Exponential Mechanism?",
               "options": [
                 {
@@ -11404,7 +11440,7 @@
               "week": 7
             },
             {
-              "id": "2026-W7-Q8",
+              "id": "2026-W7-Q9",
               "prompt": "In Statistical Parity, for a protected group C and a classifier M, what is the parity value for an ideal classifier?",
               "options": [
                 {
@@ -11431,7 +11467,7 @@
               "week": 7
             },
             {
-              "id": "2026-W7-Q9",
+              "id": "2026-W7-Q10",
               "prompt": "According to the data comparing White and African American defendants in risk assessments, which of the following statements are true? (Select all that apply.)",
               "options": [
                 {
@@ -11459,7 +11495,7 @@
               "multi": true
             },
             {
-              "id": "2026-W7-Q10",
+              "id": "2026-W7-Q11",
               "prompt": "Based on the analysis of biases in word embeddings from Wikipedia and Social Media, which of the following professions was associated with sexist prejudice towards men?",
               "options": [
                 {
@@ -11486,7 +11522,7 @@
               "week": 7
             },
             {
-              "id": "2026-W7-Q11",
+              "id": "2026-W7-Q12",
               "prompt": "The goal of Fair PCA is to find a PCA solution U = [U_A, U_B] such that the reconstruction losses of groups A and B (where A is the protected group) are:",
               "options": [
                 {

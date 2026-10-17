@@ -20,6 +20,24 @@ async function exists(p) {
 
 function buildQuestion(item, year, week, number) {
   const id = `${year}-W${week}-Q${number}`
+  // Numerical-answer question: no options, just a number (with an optional tolerance).
+  if (item.numeric) {
+    if (!item.prompt || typeof item.numeric.answer !== 'number') {
+      throw new Error(`${id}: numeric questions need a prompt and a numeric answer`)
+    }
+    return {
+      id,
+      prompt: item.prompt,
+      options: [],
+      correctAnswer: String(item.numeric.answer),
+      correctText: String(item.numeric.answer),
+      solution: item.solution || 'Solution not found in source text.',
+      year,
+      week,
+      numeric: true,
+      tolerance: item.numeric.tolerance ?? 0.01,
+    }
+  }
   if (!item.prompt || !Array.isArray(item.options) || item.options.length < 2) {
     throw new Error(`${id}: needs a prompt and at least 2 options`)
   }

@@ -805,6 +805,14 @@
     "solution": "Bias - III [33:14-36:50] and Bias - IV [0:00-4:24] - Winogender and WinoBias both measure gender-related bias."
    },
    {
+    "prompt": "You are performing a bias audit on a corpus with N = 1000 total documents. Calculate the PMI between an identity label w_i and a specific descriptive word w_j. The identity label appears in 100 documents. The descriptive word appears in 50 documents. Both words co-occur in the same document 20 times.",
+    "numeric": {
+     "answer": 2,
+     "tolerance": 0.01
+    },
+    "solution": "PMI(w_i, w_j) = log2( N · c(w_i, w_j) / (c(w_i) · c(w_j)) ) = log2( 1000 · 20 / (100 · 50) ) = log2(4) = 2."
+   },
+   {
     "prompt": "What is the minimum threshold a word has to appear in the corpus for it to be considered when performing word association analysis?",
     "options": [
      "2 times",
@@ -914,6 +922,14 @@
      "d"
     ],
     "solution": "Data Privacy [1:00:00 - 1:01:20] - If ε is large, x_i and z_i are easier to distinguish, which increases utility, and vice versa. ε controls the privacy-utility tradeoff."
+   },
+   {
+    "prompt": "An organization surveys 100 people and asks whether they voted for a certain party. To protect respondents' privacy, the organization uses the randomized response technique with ε = 0.5. Out of 100 respondents, 60 reported “Yes” and 40 reported “No.” Estimate the true number of people whose actual answer was “Yes”. Round to the nearest whole number.",
+    "numeric": {
+     "answer": 91,
+     "tolerance": 0.5
+    },
+    "solution": "Data Privacy - with ε = 0.5 a response is truthful with probability e^ε / (1 + e^ε) ≈ 0.6225, so the estimate is (60 − 100·(1 − 0.6225)) / (2·0.6225 − 1) ≈ 91."
    },
    {
     "prompt": "Which trust scenario correctly describes the differential privacy model?",
@@ -1050,6 +1066,14 @@
      "c"
     ],
     "solution": "Approximate Differential Privacy [14:45-22:55] - Gaussian mechanism gains better utility with quadratically less amount of noise."
+   },
+   {
+    "prompt": "There are three buyers whose valuations are 15, 20, and 135, respectively. What is the absolute difference in revenue when the price of a digital good changes from 14 to 18? (Round your answer to the nearest whole number.)",
+    "numeric": {
+     "answer": 6,
+     "tolerance": 0.5
+    },
+    "solution": "Exponential Mechanism - revenue at price 14 is 3 × 14 = 42 and at price 18 is 2 × 18 = 36 (the buyer valuing it at 15 no longer buys), so the difference is 6."
    },
    {
     "prompt": "How does the Exponential Mechanism select a price h ∈ H?",

@@ -24,7 +24,9 @@ export function QuizCard() {
   const question = currentQuestion
   const answer = question ? session.answers[question.id] : undefined
   const revealed = question ? session.revealed.includes(question.id) : false
-  const isMulti = Boolean(question?.multi)
+  const isNumeric = Boolean(question?.numeric)
+  // Multi-select and numeric answers are submitted with a button rather than a single click.
+  const isMulti = Boolean(question?.multi) || isNumeric
   const selectedKeys = splitAnswer(answer)
   const correctKeys = splitAnswer(question?.correctAnswer)
 
@@ -153,7 +155,19 @@ export function QuizCard() {
               alt="Figure for this question"
             />
           ))}
-          {isMulti && <p className="multi-hint">Select all that apply</p>}
+          {isMulti && !isNumeric && <p className="multi-hint">Select all that apply</p>}
+          {isNumeric && (
+            <input
+              className="numeric-input"
+              type="text"
+              inputMode="decimal"
+              placeholder="Type your numerical answer"
+              value={answer ?? ''}
+              disabled={session.mode === 'rapid' && revealed}
+              onChange={(event) => answerQuestion(question.id, event.target.value, false)}
+              aria-label="Numerical answer"
+            />
+          )}
           <div className="options">
             {question.options.map((option) => {
               const isSelected = selectedKeys.includes(option.key)
@@ -179,7 +193,7 @@ export function QuizCard() {
       {session.mode === 'rapid' && isMulti && !revealed && (
         <button
           className="action-btn"
-          disabled={selectedKeys.length === 0}
+          disabled={isNumeric ? !answer?.trim() : selectedKeys.length === 0}
           onClick={() => answerQuestion(question.id, answer ?? '', true)}
         >
           Check Answer
@@ -192,7 +206,9 @@ export function QuizCard() {
           <span>
             {instantState === 'correct' ? 'Great hit.' : instantState === 'partial' ? 'Partly right.' : 'Not this one.'} Correct answer:{' '}
             <strong>
-              {correctKeys
+              {isNumeric
+                ? question.correctAnswer
+                : correctKeys
                 .map((key) => `${key.toUpperCase()}. ${question.options.find((opt) => opt.key === key)?.text}`)
                 .join(' | ')}
             </strong>

@@ -27,7 +27,7 @@ const POSITION_DEPENDENT = /of the above|of these|\b(both|option|options)\s+[a-e
 
 // Shuffles the options, re-labels them a, b, c... and re-maps the correct answer to the new labels.
 export function shuffleOptions(question: Question): Question {
-  if (question.options.some((option) => POSITION_DEPENDENT.test(option.text))) {
+  if (question.numeric || question.options.some((option) => POSITION_DEPENDENT.test(option.text))) {
     return question
   }
   const keys = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
@@ -130,6 +130,11 @@ export function getPool(
 // questions are marked partially: each correct option ticked earns 1/n of the credit and each wrong
 // option ticked takes 1/n away, never going below 0.
 export function questionCredit(question: Question, answer: string | undefined): number {
+  if (question.numeric) {
+    const value = Number(answer)
+    const target = Number(question.correctAnswer)
+    return answer?.trim() && Math.abs(value - target) <= (question.tolerance ?? 0.01) ? 1 : 0
+  }
   const selected = splitAnswer(answer)
   if (!question.multi) {
     return answer === question.correctAnswer ? 1 : 0
@@ -202,6 +207,9 @@ export function joinAnswer(keys: string[]): string {
 }
 
 export function describeAnswer(question: Question, answer: string | undefined): string {
+  if (question.numeric) {
+    return answer?.trim() ? answer : 'Not answered'
+  }
   const keys = splitAnswer(answer)
   if (keys.length === 0) {
     return 'Not answered'
