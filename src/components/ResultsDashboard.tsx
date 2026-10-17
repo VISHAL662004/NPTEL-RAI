@@ -91,7 +91,7 @@ export function ResultsDashboard() {
               ? 'Excellent consistency. Keep pushing for perfect runs.'
               : tone === 'steady'
                 ? 'Solid baseline. Review weak areas for a quick jump.'
-                : 'Focus mode. Start with flagged and missed concepts.'}
+                : 'Focus mode. Start with the missed concepts.'}
           </p>
         </div>
       </motion.section>

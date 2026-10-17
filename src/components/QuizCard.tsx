@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from 'framer-motion'
-import { AlertCircle, Bookmark, BookmarkCheck, Flag } from 'lucide-react'
+import { AlertCircle, Bookmark, BookmarkCheck } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useQuiz } from '../context/QuizContext'
 import { formatDuration, joinAnswer, questionCredit, splitAnswer } from '../utils/quiz'
@@ -10,7 +10,6 @@ export function QuizCard() {
     session,
     bookmarks,
     toggleBookmark,
-    toggleFlag,
     answerQuestion,
     previousQuestion,
     nextQuestion,
@@ -18,7 +17,7 @@ export function QuizCard() {
     resetQuiz,
     progress,
   } = useQuiz()
-  const [autoAdvance, setAutoAdvance] = useState(false)
+  const [autoAdvance, setAutoAdvance] = useState(true)
   const autoAdvanceTimer = useRef<number | null>(null)
 
   const question = currentQuestion
@@ -125,10 +124,6 @@ export function QuizCard() {
             />
             <span>Auto Next</span>
           </label>
-          <button onClick={() => toggleFlag(question.id)} className="ghost-btn">
-            <Flag size={16} />
-            {session.flagged.includes(question.id) ? 'Flagged' : 'Flag'}
-          </button>
           <button onClick={() => toggleBookmark(question.id)} className="ghost-btn">
             {bookmarks.includes(question.id) ? <BookmarkCheck size={16} /> : <Bookmark size={16} />}
             Bookmark

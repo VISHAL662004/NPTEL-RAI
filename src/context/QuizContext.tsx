@@ -43,7 +43,6 @@ interface QuizContextValue {
   setIndex: (index: number) => void
   nextQuestion: () => void
   previousQuestion: () => void
-  toggleFlag: (questionId: string) => void
   submitQuiz: () => void
   resetQuiz: () => void
 }
@@ -235,15 +234,6 @@ export function QuizProvider({ children }: { children: React.ReactNode }) {
     setSession((prev) => ({ ...prev, index: Math.max(prev.index - 1, 0) }))
   }, [])
 
-  const toggleFlag = useCallback((questionId: string) => {
-    setSession((prev) => ({
-      ...prev,
-      flagged: prev.flagged.includes(questionId)
-        ? prev.flagged.filter((id) => id !== questionId)
-        : [...prev.flagged, questionId],
-    }))
-  }, [])
-
   const submitQuiz = useCallback(() => {
     setSession((prev) => ({ ...prev, submitted: true }))
   }, [])
@@ -287,7 +277,6 @@ export function QuizProvider({ children }: { children: React.ReactNode }) {
       setIndex,
       nextQuestion,
       previousQuestion,
-      toggleFlag,
       submitQuiz,
       resetQuiz,
     }),
@@ -311,7 +300,6 @@ export function QuizProvider({ children }: { children: React.ReactNode }) {
       setIndex,
       nextQuestion,
       previousQuestion,
-      toggleFlag,
       submitQuiz,
       resetQuiz,
     ],

@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion'
+import { Home } from 'lucide-react'
 import { ControlPanel } from './components/ControlPanel'
 import { QuizCard } from './components/QuizCard'
 import { ResultsDashboard } from './components/ResultsDashboard'
 import { useQuiz } from './context/QuizContext'
 
 function App() {
-  const { loading, error, session } = useQuiz()
+  const { loading, error, session, resetQuiz } = useQuiz()
 
   if (loading) {
     return (
@@ -41,6 +42,11 @@ function App() {
           <p className="hero-kicker">NPTEL Multi-Year Practice Arena</p>
           <h1>Responsible AI</h1>
           <p className="hero-credit">Made by Vishal Kumar</p>
+          {session.started && (
+            <button className="ghost-btn home-btn" onClick={resetQuiz}>
+              <Home size={16} /> Go Home
+            </button>
+          )}
         </div>
         <p className="hero-sub">
           Year-wise, week-wise, and full syllabus drills with instant review and
