@@ -51,6 +51,9 @@ function buildQuestion(item, year, week, number) {
   if (answers.length > 1) {
     question.multi = true
   }
+  if (item.table) {
+    question.table = item.table
+  }
   if (item.images?.length) {
     question.images = item.images.map((file) => `data/images/${year}/${path.basename(file)}`)
   }

@@ -724,3 +724,26 @@ input {
   color: var(--text);
   font-weight: 500;
 }
+
+.question-table-wrap {
+  overflow-x: auto;
+  margin: 0.5rem 0 0.9rem;
+}
+
+.question-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.question-table th,
+.question-table td {
+  border: 1px solid rgba(200, 200, 205, 0.25);
+  padding: 0.5rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.question-table th {
+  background: rgba(255, 255, 255, 0.06);
+  font-weight: 600;
+}

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T12:12:10.933Z",
+  "generatedAt": "2026-10-17T12:48:23.757Z",
   "years": [
     {
       "year": "2024",
@@ -9897,7 +9897,7 @@
           "questions": [
             {
               "id": "2026-W3-Q1",
-              "prompt": "Match the unlearning method to their corresponding concept. 1) Exact unlearning i) Unlearned model and retrained model are distributionally close 2) Unlearning via Differential Privacy ii) The forget set is clearly defined 3) Example Unlearning iii) The forget set is not clearly defined 4) Concept Unlearning iv) Unlearned model and retrained model are distributionally identical",
+              "prompt": "Match the unlearning method to their corresponding concept.",
               "options": [
                 {
                   "key": "a",
@@ -9920,7 +9920,31 @@
               "correctText": "1 -> iv, 2-> i, 3-> ii, 4-> iii",
               "solution": "Answers are found throughout the Unlearning and Approximate Unlearning lectures - ● Exact Unlearning - Unlearned model & retrained model to be distributionally identical. ● Unlearning via Differential Privacy - Unlearned model & retrained model to be distributionally close. ● Example Unlearning - Train, retain, and forget sets are often clearly defined. ● Concept Unlearning - Train, retain, or forget sets are poorly specified or just not ● specified at all.",
               "year": "2026",
-              "week": 3
+              "week": 3,
+              "table": {
+                "headers": [
+                  "Unlearning method",
+                  "Concept"
+                ],
+                "rows": [
+                  [
+                    "1) Exact unlearning",
+                    "i) Unlearned model and retrained model are distributionally close"
+                  ],
+                  [
+                    "2) Unlearning via Differential Privacy",
+                    "ii) The forget set is clearly defined"
+                  ],
+                  [
+                    "3) Example Unlearning",
+                    "iii) The forget set is not clearly defined"
+                  ],
+                  [
+                    "4) Concept Unlearning",
+                    "iv) Unlearned model and retrained model are distributionally identical"
+                  ]
+                ]
+              }
             },
             {
               "id": "2026-W3-Q2",

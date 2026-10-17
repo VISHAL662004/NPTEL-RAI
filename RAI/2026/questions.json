@@ -336,7 +336,31 @@
   "week": 3,
   "questions": [
    {
-    "prompt": "Match the unlearning method to their corresponding concept. 1) Exact unlearning i) Unlearned model and retrained model are distributionally close 2) Unlearning via Differential Privacy ii) The forget set is clearly defined 3) Example Unlearning iii) The forget set is not clearly defined 4) Concept Unlearning iv) Unlearned model and retrained model are distributionally identical",
+    "prompt": "Match the unlearning method to their corresponding concept.",
+    "table": {
+     "headers": [
+      "Unlearning method",
+      "Concept"
+     ],
+     "rows": [
+      [
+       "1) Exact unlearning",
+       "i) Unlearned model and retrained model are distributionally close"
+      ],
+      [
+       "2) Unlearning via Differential Privacy",
+       "ii) The forget set is clearly defined"
+      ],
+      [
+       "3) Example Unlearning",
+       "iii) The forget set is not clearly defined"
+      ],
+      [
+       "4) Concept Unlearning",
+       "iv) Unlearned model and retrained model are distributionally identical"
+      ]
+     ]
+    },
     "options": [
      "1 -> i, 2-> iv, 3-> iii, 4-> ii",
      "1 -> i, 2-> iv, 3-> ii, 4-> iii",

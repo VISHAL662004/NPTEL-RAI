@@ -17,6 +17,7 @@ export interface Question {
   correctText: string
   solution: string
   multi?: boolean
+  table?: { headers: string[]; rows: string[][] }
   images?: string[]
   year: string
   week: number

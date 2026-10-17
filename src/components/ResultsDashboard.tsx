@@ -2,6 +2,7 @@ import { CheckCircle2, CircleX, MinusCircle, RotateCcw, Sparkles } from 'lucide-
 import { motion } from 'framer-motion'
 import { useMemo } from 'react'
 import { useQuiz } from '../context/QuizContext'
+import { QuestionTable } from './QuestionTable'
 import { calculateScore, describeAnswer, questionCredit, weakAreas } from '../utils/quiz'
 
 const formatMarks = (value: number) => (Number.isInteger(value) ? String(value) : value.toFixed(2))
@@ -145,6 +146,7 @@ export function ResultsDashboard() {
                 <p className="q-title">
                   Q{index + 1}. {question.prompt}
                 </p>
+                {question.table && <QuestionTable table={question.table} />}
                 <p>
                   Selected: <strong>{describeAnswer(question, selected)}</strong>
                 </p>

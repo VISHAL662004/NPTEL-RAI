@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { AlertCircle, Bookmark, BookmarkCheck } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useQuiz } from '../context/QuizContext'
+import { QuestionTable } from './QuestionTable'
 import { formatDuration, joinAnswer, questionCredit, splitAnswer } from '../utils/quiz'
 
 export function QuizCard() {
@@ -143,6 +144,7 @@ export function QuizCard() {
           transition={{ duration: 0.2 }}
         >
           <h3>{question.prompt}</h3>
+          {question.table && <QuestionTable table={question.table} />}
           {question.images?.map((src) => (
             <img
               key={src}
